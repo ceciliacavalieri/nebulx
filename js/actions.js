@@ -37,7 +37,7 @@ function hideText(textId)
 function playAudio(audioId)
 {
     var audio = document.getElementById(audioId);
-    audio.playbackRate = 16.0;
+    //audio.playbackRate = 16.0;
     var promise = audio.play();
     // In browsers that don’t yet support this functionality,
     // playPromise won’t be defined.
