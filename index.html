@@ -6,22 +6,483 @@
     </head>
 
     <body>
+        <div id="video-container" class="video-container" onclick="showOpeningDream()">
+            <video id="video" autoplay muted onended="onEndedVideo()"  onplay="onPlayVideo()">
+                <source src="videos/TELA 00 - TODOS - CONSTELAÇÃO MOLECULAR.mp4" type="video/mp4">
+            </video>
+        </div>
 
-        <a href="./opening-dream.html">
-            <div id="video-container" class="video-container">
-                <video autoplay onended="onEndedVideo()">
-                    <source src="videos/TELA 00 - TODOS - CONSTELAÇÃO MOLECULAR.mp4" type="video/mp4">
-                </video>
-            </div>
-        </a>
+        <div id="texto00en" class="texto texto00en" onclick="showBirths()">opening dream</div>
+        <div id="texto00fr" class="texto texto00fr" onclick="showNaissances()">rêve d'ouverture</div>
+        <div id="texto00pt" class="texto texto00pt" onclick="showNascimentos()">sonho de abertura</div>
+    
 
-        <audio controls autoplay loop hidden="true">
+        <!-- TEXTOS EM PORTUGUÊS -->
+        <div id="texto01pt" class="texto texto01pt" onclick="showAViaLactea()">nascimentos</div>
+        <div id="texto02pt" class="texto texto02pt" onclick="showLuasDeLeite()">a via láctea</div>
+        <div id="texto03pt" class="texto texto03pt" onclick="showCabra()">luas de leite</div></a>
+        <div id="texto04pt" class="texto texto04pt" onclick="showVaca()">cabra</div>
+        <div id="texto05pt" class="texto texto05pt" onclick="showMonikaPt()">vaca</div>
+        <div id="texto06pt" class="texto texto06pt" onclick="showViagemAoCentroDasLuas()">monika</div>
+        <div id="texto07pt" class="texto texto07pt" onclick="showLinguaLactea()">
+            <div id="texto071pt" class="texto texto071pt">viagem ao centro das luas</div>
+            <div id="texto072pt" class="texto texto072pt"> , minimundinhos</div>
+        </div>
+        <div id="texto08pt" class="texto texto08pt" onclick="showProduzirCom()">língua láctea</div>
+        <div id="texto09pt" class="texto texto09pt" onclick="showACasaDeMuites()">produzir-com</div>
+        <div id="texto10pt" class="texto texto10pt" onclick="showObservaSeEmbriaoCom()">a casa de muites</div>
+        <div id="texto11pt" class="texto texto11pt" onclick="showVesiculaBiliarDistendida()">observa-se embrião com</div>
+        <div id="texto12pt" class="texto texto12pt" onclick="showPedra()">vesícula biliar distendida</div>
+        <div id="texto13pt" class="texto texto13pt" onclick="showPaisEmMaternagem()">pedra</div>
+        <div id="texto14pt" class="texto texto14pt" onclick="showOSoproNaBolhaQueEstoura()">pais de maternagem</div>
+        <div id="texto15pt" class="texto texto15pt" onclick="showSonhoDeFechamento()">o sopro na bolha<br>que estoura</div>
+        <div id="texto16pt" class="texto texto16pt" onclick="showTodaMateria()">sonho de fechamento</div>
+        <div id="texto17pt" class="texto texto17pt" onclick="showEsquecimento()">toda matéria</div>
+        <div id="texto18pt" class="texto texto18pt" onclick="showCreditosParte1()">esquecimento</div>
+        <div id="texto19pt" class="texto texto19pt" onclick="showCreditosParte2()">créditos</div>
+        <div id="texto20pt" class="texto texto20pt">créditos</div>
+        <div id="texto2001pt" class="texto texto2001pt">constelação de lactose</div>
+        <div id="texto2002pt" class="texto texto2002pt">cosmic latte #fff8e7 johns hopkins university</div>
+        <div id="texto2004pt" class="texto texto2004pt">leite materno no microscópio</div>
+        <div id="texto2005pt" class="texto texto2005pt">via láctea de william herschel projetada na parede</div>
+        <div id="texto2006pt" class="texto texto2006pt">poema-laudo ultrassom embrião</div>
+        <div id="texto2007pt" class="texto texto2007pt">lua de leite [monika & leo]</div>
+        <div id="texto2008pt" class="texto texto2008pt">lua de leite de cabra</div>
+        <div id="texto2009pt" class="texto texto2009pt">lua de leite de vaca anônima</div>
+        <div id="texto2010pt" class="texto texto2010pt">leite humano anônimo no microscópio</div>
+        <div id="texto2011pt" class="texto texto2011pt">farinhas de trigo movimento dos pequenos agricultores</div>
+        <div id="texto2012pt" class="texto texto2012pt">davi kopenawa</div>
+        <div id="texto2013pt" class="texto texto2013pt">wikipedia</div>
+        <div id="texto2014pt" class="texto texto2014pt">pedra de levanha</div>
+        <div id="texto2015pt" class="texto texto2015pt">copos com leites de três anos</div>
+        <div id="texto2016pt" class="texto texto2016pt">poema-laudo pedra na vesícula</div>
+        <div id="texto2017pt" class="texto texto2017pt">nata de leite de vaca anônima no microscópio</div>
+        <div id="texto2018pt" class="texto texto2018pt">cavalo-marinho em trabalho de parto</div>
+        <div id="texto2019pt" class="texto texto2019pt">lua de leite de ovelha anônima</div>
+        <div id="texto2020pt" class="texto texto2020pt">levanha ativa</div>
+        <div id="texto2021pt" class="texto texto2021pt">pedra de sais de cálcio, bilirrubina e colesterol</div>
+        <div id="texto2022pt" class="texto texto2022pt">locução de dora cavalieri penna e joice marino</div>
+        <div id="texto2023pt" class="texto texto2023pt">larvas de drosófila sobre ovo de levanha</div>
+        <div id="texto2024pt" class="texto texto2024pt">ovo de levanha com larvas de drosófila</div>
+        <div id="texto2025pt" class="texto texto2025pt">alvéolos de co2 no microscópio</div>
+        <div id="texto2026pt" class="texto texto2026pt">leite de vaca anônima azedo no microscópio</div>
+        <div id="texto2027pt" class="texto texto2027pt">som do hidrogênio</div>
+        <div id="texto2028pt" class="texto texto2028pt">web enablement luisa burini</div>
+
+               <!-- AUDIOS EM PORTUGUÊS -->
+               <audio id="audio01pt" controls hidden="true" onended="onEndedAudio('01', 'pt')" >
+                <source src="./audios/pt/audio 01 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio02pt" controls hidden="true" onended="onEndedAudio('02', 'pt')">
+                <source src="./audios/pt/audio 02 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio03pt" controls hidden="true" onended="onEndedAudio('03', 'pt')">
+                <source src="./audios/pt/audio 03 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio04pt" controls hidden="true" onended="onEndedAudio('04', 'pt')">
+                <source src="./audios/pt/audio 04 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio05pt" controls hidden="true" onended="onEndedAudio('05', 'pt')">
+                <source src="./audios/pt/audio 05 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio06pt" controls hidden="true" onended="onEndedAudio('06', 'pt')">
+                <source src="./audios/pt/audio 06 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio07pt" controls hidden="true" onended="onEndedAudio('07', 'pt')">
+                <source src="./audios/pt/audio 07 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio08pt" controls hidden="true" onended="onEndedAudio('08', 'pt')">
+                <source src="./audios/pt/audio 08 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio09pt" controls hidden="true" onended="onEndedAudio('09', 'pt')">
+                <source src="./audios/pt/audio 09 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio10pt" controls hidden="true" onended="onEndedAudio('10', 'pt')">
+                <source src="./audios/pt/audio 10 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio11pt" controls hidden="true" onended="onEndedAudio('11', 'pt')">
+                <source src="./audios/pt/audio 11 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio12pt" controls hidden="true" onended="onEndedAudio('12', 'pt')">
+                <source src="./audios/pt/audio 12 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio13pt" controls hidden="true" onended="onEndedAudio('13', 'pt')">
+                <source src="./audios/pt/audio 13 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio14pt" controls hidden="true" onended="onEndedAudio('14', 'pt')">
+                <source src="./audios/pt/audio 14 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio15pt" controls hidden="true" onended="onEndedAudio('15', 'pt')">
+                <source src="./audios/pt/audio 15 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio16pt" controls hidden="true" onended="onEndedAudio('16', 'pt')">
+                <source src="./audios/pt/audio 16 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio17pt" controls hidden="true" onended="onEndedAudio('17', 'pt')">
+                <source src="./audios/pt/audio 17 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio18pt" controls hidden="true" onended="onEndedAudio('18', 'pt')">
+                <source src="./audios/pt/audio 18 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+    
+            <audio id="audio19pt" controls loop hidden="true" onended="onEndedAudio19pt()">
+                <source src="./audios/pt/audio 19 PT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    
+            <audio id="audio20pt" controls loop hidden="true">
+                <source src="./audios/pt/AUDIO 20 BABEL.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        <!-- TEXTOS EM INGLÊS -->
+        <div id="texto01en" class="texto texto01en" onclick="showTheMilkyWay()">births</div>
+        <div id="texto02en" class="texto texto02en" onclick="showMilkMoons()">the milky way</div>
+        <div id="texto03en" class="texto texto03en" onclick="showEwe()">milk moons</div>
+        <div id="texto04en" class="texto texto04en" onclick="showCow()">ewe</div>
+        <div id="texto05en" class="texto texto05en" onclick="showMonikaEn()">cow</div>
+        <div id="texto06en" class="texto texto06en" onclick="showJourneyToTheCenterOfTheMoons()">monika</div>
+        <div id="texto07en" class="texto texto07en" onclick="showMilkyTongue()">
+            <div id="texto071en" class="texto texto071en">journey to the center of the moons</div>
+            <div id="texto072en" class="texto texto072en"> , tiny little worlds</div>
+        </div>
+        <div id="texto08en" class="texto texto08en" onclick="showProducedWith()">milky tongue</div>
+        <div id="texto09en" class="texto texto09en" onclick="showTheHomeOfMany()">produced-with</div>
+        <div id="texto10en" class="texto texto10en" onclick="showBwomb()"> the home of many</div>
+        <div id="texto11en" class="texto texto11en" onclick="showGallbladder()">bwomb</div>
+        <div id="texto12en" class="texto texto12en" onclick="showStone()">gallbladder</div>
+        <div id="texto13en" class="texto texto13en" onclick="showMotheringFathers()">stone</div>
+        <div id="texto14en" class="texto texto14en" onclick="showTheBreathInTheBurstingBubble()">mothering fathers</div>
+        <div id="texto15en" class="texto texto15en" onclick="showClosingDream()">the breath in the<br>bursting bubble</div>
+        <div id="texto16en" class="texto texto16en" onclick="showAllTheMatter()">closing dream</div>
+        <div id="texto17en" class="texto texto17en" onclick="showOblivion()">all the matter</div>
+        <div id="texto18en" class="texto texto18en" onclick="showCreditsPart1()">oblivion</div>
+        <div id="texto19en" class="texto texto19en" onclick="showCreditsPart2()">credits</div>
+        <div id="texto20en" class="texto texto20en">credits</div>
+        <div id="texto2001en" class="texto texto2001en">lactose constellation</div>
+        <div id="texto2002en" class="texto texto2002en">cosmic latte #fff8e7 johns hopkins university</div>
+        <div id="texto2004en" class="texto texto2004en">breast milk under the microscope</div>
+        <div id="texto2005en" class="texto texto2005en">william herschel's milky way projected on the wall</div>
+        <div id="texto2006en" class="texto texto2006en">poem-report ultrasound embryo</div>
+        <div id="texto2007en" class="texto texto2007en">milkmoon [monika & leo]</div>
+        <div id="texto2008en" class="texto texto2008en">goat milk moon</div>
+        <div id="texto2009en" class="texto texto2009en">anonymous cow's milk moon</div>
+        <div id="texto2010en" class="texto texto2010en">anonymous human milk under the microscope</div>
+        <div id="texto2011en" class="texto texto2011en">wheat flour small farmers movement</div>
+        <div id="texto2012en" class="texto texto2012en">davi kopenawa</div>
+        <div id="texto2013en" class="texto texto2013en">wikipedia</div>
+        <div id="texto2014en" class="texto texto2014en">levanha stone</div>
+        <div id="texto2015en" class="texto texto2015en">three year old milk cups</div>
+        <div id="texto2016en" class="texto texto2016en">poem-report gall stone gallbladder</div>
+        <div id="texto2017en" class="texto texto2017en">seahorse in labor</div>
+        <div id="texto2018en" class="texto texto2018en">anonymous ewe's milk moon</div>
+        <div id="texto2019en" class="texto texto2019en">active levanha</div>
+        <div id="texto2020en" class="texto texto2020en">calcium salt, bilirubin and cholesterol stone</div>
+        <div id="texto2021en" class="texto texto2021en">voice-over by inês ou tamara jones and laranja ribas</div>
+        <div id="texto2022en" class="texto texto2022en">drosophila larvae on levanha egg gall stone shapped</div>
+        <div id="texto2023en" class="texto texto2023en">co2 alveoli in the microscope</div>
+        <div id="texto2024en" class="texto texto2024en">english proofreading by joão camillo penna</div>
+        <div id="texto2025en" class="texto texto2025en">anonymous sour cow's milk under the microscope</div>
+        <div id="texto2026en" class="texto texto2026en">sound of hydrogen</div>
+        <div id="texto2027en" class="texto texto2027en">web enablement luisa burini</div>
+       
+        <!-- AUDIOS EM INGLÊS -->
+        <audio id="audio01en" controls hidden="true" onended="onEndedAudio('01', 'en')" >
+            <source src="./audios/en/audio 01 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio02en" controls hidden="true" onended="onEndedAudio('02', 'en')">
+            <source src="./audios/en/audio 02 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio03en" controls hidden="true" onended="onEndedAudio('03', 'en')">
+            <source src="./audios/en/audio 03 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio04en" controls hidden="true" onended="onEndedAudio('04', 'en')">
+            <source src="./audios/en/audio 04 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio05en" controls hidden="true" onended="onEndedAudio('05', 'en')">
+            <source src="./audios/en/audio 05 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio06en" controls hidden="true" onended="onEndedAudio('06', 'en')">
+            <source src="./audios/en/audio 06 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio07en" controls hidden="true" onended="onEndedAudio('07', 'en')">
+            <source src="./audios/en/audio 07 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio08en" controls hidden="true" onended="onEndedAudio('08', 'en')">
+            <source src="./audios/en/audio 08 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio09en" controls hidden="true" onended="onEndedAudio('09', 'en')">
+            <source src="./audios/en/audio 09 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio10en" controls hidden="true" onended="onEndedAudio('10', 'en')">
+            <source src="./audios/en/audio 10 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio11en" controls hidden="true" onended="onEndedAudio('11', 'en')">
+            <source src="./audios/en/audio 11 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio12en" controls hidden="true" onended="onEndedAudio('12', 'en')">
+            <source src="./audios/en/audio 12 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio13en" controls hidden="true" onended="onEndedAudio('13', 'en')">
+            <source src="./audios/en/audio 13 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio14en" controls hidden="true" onended="onEndedAudio('14', 'en')">
+            <source src="./audios/en/audio 14 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio15en" controls hidden="true" onended="onEndedAudio('15', 'en')">
+            <source src="./audios/en/audio 15 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio16en" controls hidden="true" onended="onEndedAudio('16', 'en')">
+            <source src="./audios/en/audio 16 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio17en" controls hidden="true" onended="onEndedAudio('17', 'en')">
+            <source src="./audios/en/audio 17 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio18en" controls hidden="true" onended="onEndedAudio('18', 'en')">
+            <source src="./audios/en/audio 18 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio19en" controls hidden="true" onended="onEndedAudio('19', 'en')">
+            <source src="./audios/en/audio 19 EN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio20en" controls loop hidden="true">
+            <source src="./audios/pt/AUDIO 20 BABEL.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <!-- TEXTOS EM FRANCÊS -->
+        <div id="texto01fr" class="texto texto01fr" onclick="showLaVoieLactee()">naissances</div>
+        <div id="texto02fr" class="texto texto02fr" onclick="showLunesDeLait()">la voie lactée</div>
+        <div id="texto03fr" class="texto texto03fr" onclick="showChevre()">lunes de lait</div>
+        <div id="texto04fr" class="texto texto04fr" onclick="showVache()">chèvre</div>
+        <div id="texto05fr" class="texto texto05fr" onclick="showMonikaFr()">vache</div>
+        <div id="texto06fr" class="texto texto06fr" onclick="showVoyageAuCentreDesLunes()">monika</div>
+        <div id="texto07fr" class="texto texto07fr" onclick="showLangueLactee()">
+            <div id="texto071fr" class="texto texto071fr">voyage au centre des lunes</div>
+            <div id="texto072fr" class="texto texto072fr"> , des petits mondes</div>
+        </div>
+        <div id="texto08fr" class="texto texto08fr" onclick="showProduireAvec()">langue lactée</div>
+        <div id="texto09fr" class="texto texto09fr" onclick="showLaMaisonDeTantDeGens()">produire-avec</div>
+        <div id="texto10fr" class="texto texto10fr" onclick="showLEmbryonEstObserveAvec()">la maison de tant de gens</div>
+        <div id="texto11fr" class="texto texto11fr" onclick="showVesiculeBiliaireDistendue()">l'embryon est observé avec</div>
+        <div id="texto12fr" class="texto texto12fr" onclick="showPierre()">vésicule biliaire distendue</div>
+        <div id="texto13fr" class="texto texto13fr" onclick="showLesPeresQuiFontDuMaternage()">pierre</div>
+        <div id="texto14fr" class="texto texto14fr" onclick="showLeSouffleDansLaBulleQuiEclate()">les pères qui font du maternage</div>
+        <div id="texto15fr" class="texto texto15fr" onclick="showReveDeCloture()">le souffle dans la <br>bulle qui éclate</div>
+        <div id="texto16fr" class="texto texto16fr" onclick="showTouteLaMatiere()">rêve de clôture</div>
+        <div id="texto17fr" class="texto texto17fr" onclick="showLOubli()">toute la matière</div>
+        <div id="texto18fr" class="texto texto18fr" onclick="showCreditsFrPart1()">l’oubli</div>
+        <div id="texto19fr" class="texto texto19fr" onclick="showCreditsFrPart2()">crédits</div>
+        <div id="texto20fr" class="texto texto20fr">crédits</div>
+        <div id="texto2001fr" class="texto texto2001fr">constellation de lactose</div>
+        <div id="texto2002fr" class="texto texto2002fr">cosmic latte #fff8e7 johns hopkins university</div>
+        <div id="texto2004fr" class="texto texto2004fr">le lait maternel sous le microscope</div>
+        <div id="texto2005fr" class="texto texto2005fr">la voie lactée de william herschel projetée sur le mur</div>
+        <div id="texto2006fr" class="texto texto2006fr">poème-rapport échographie embryon </div>
+        <div id="texto2007fr" class="texto texto2007fr">milkmoon [monika & leo]</div>
+        <div id="texto2008fr" class="texto texto2008fr">lune de lait de chèvre anonyme</div>
+        <div id="texto2009fr" class="texto texto2009fr">lune anonyme de lait de vache</div>
+        <div id="texto2010fr" class="texto texto2010fr">lait humain anonyme sous le microscope</div>
+        <div id="texto2011fr" class="texto texto2011fr">farine de blé du mouvement des petits agriculteurs</div>
+        <div id="texto2012fr" class="texto texto2012fr">davi kopenawa</div>
+        <div id="texto2013fr" class="texto texto2013fr">wikipedia</div>
+        <div id="texto2014fr" class="texto texto2014fr">pierre levaine</div>
+        <div id="texto2015fr" class="texto texto2015fr">tasses de lait de trois ans</div>
+        <div id="texto2016fr" class="texto texto2016fr">poème-rapport vésicule biliaire</div>
+        <div id="texto2017fr" class="texto texto2017fr">hippocampe en travail</div>
+        <div id="texto2018fr" class="texto texto2018fr">lune de lait de brebis anonyme</div>
+        <div id="texto2019fr" class="texto texto2019fr">levaine active</div>
+        <div id="texto2020fr" class="texto texto2020fr">pierre de sel de calcium, bilirubine et cholestérol</div>
+        <div id="texto2021fr" class="texto texto2021fr">voix off d'antonia toledo de morales et cécilie morel</div>
+        <div id="texto2022fr" class="texto texto2022fr">larves de drosophile sur pierre sculpté en levaine</div>
+        <div id="texto2023fr" class="texto texto2023fr">alvéoles de co2 au microscope</div>
+        <div id="texto2024fr" class="texto texto2024fr">relecture en français par joão camillo penna</div>
+        <div id="texto2025fr" class="texto texto2025fr">lait aigre de vache anonyme au microscope</div>
+        <div id="texto2026fr" class="texto texto2026fr">son de l'hydrogène</div>
+        <div id="texto2027fr" class="texto texto2027fr">web enablement luisa burini</div>
+
+        <!-- AUDIOS EM FRANCÊS -->
+        <audio id="audio01fr" controls hidden="true" onended="onEndedAudio('01', 'fr')">
+            <source src="./audios/fr/audio 01 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio02fr" controls hidden="true" onended="onEndedAudio('02', 'fr')">
+            <source src="./audios/fr/audio 02 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio03fr" controls hidden="true" onended="onEndedAudio('03', 'fr')">
+            <source src="./audios/fr/audio 03 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio04fr" controls hidden="true" onended="onEndedAudio('04', 'fr')">
+            <source src="./audios/fr/audio 04 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio05fr" controls hidden="true" onended="onEndedAudio('05', 'fr')">
+            <source src="./audios/fr/audio 05 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio06fr" controls hidden="true" onended="onEndedAudio('06', 'fr')">
+            <source src="./audios/fr/audio 06 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio07fr" controls hidden="true"  onended="onEndedAudio('07', 'fr')">
+            <source src="./audios/fr/audio 07 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio08fr" controls hidden="true" onended="onEndedAudio('08','fr')">
+            <source src="./audios/fr/audio 08 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio09fr" controls hidden="true" onended="onEndedAudio('09', 'fr')">
+            <source src="./audios/fr/audio 09 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio10fr" controls hidden="true" onended="onEndedAudio('10', 'fr')">
+            <source src="./audios/fr/audio 10 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio11fr" controls hidden="true" onended="onEndedAudio('11', 'fr')">
+            <source src="./audios/fr/audio 11 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio12fr" controls hidden="true" onended="onEndedAudio('12', 'fr')">
+            <source src="./audios/fr/audio 12 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio13fr" controls hidden="true" onended="onEndedAudio('13', 'fr')">
+            <source src="./audios/fr/audio 13 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio14fr" controls hidden="true" onended="onEndedAudio('14', 'fr')">
+            <source src="./audios/fr/audio 14 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio15fr" controls hidden="true" onended="onEndedAudio('15', 'fr')">
+            <source src="./audios/fr/audio 15 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio16fr" controls hidden="true" onended="onEndedAudio('16', 'fr')">
+            <source src="./audios/fr/audio 16 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio17fr" controls hidden="true" onended="onEndedAudio('17', 'fr')">
+            <source src="./audios/fr/audio 17 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio18fr" controls hidden="true" onended="onEndedAudio('18', 'fr')">
+            <source src="./audios/fr/audio 18 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio19fr" controls hidden="true" onended="onEndedAudio('19', 'fr')">
+            <source src="./audios/fr/audio 19 FR.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <audio id="audio20fr" controls loop hidden="true">
+            <source src="./audios/fr/AUDIO 20 BABEL.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <!-- AUDIO BASE -->
+        
+        <audio id="audioBase" autoplay controls loop hidden="true">
             <source src="./audios/AUDIO 00 BASE DE TODOS OS QUADROS.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio> 
+
         <script type="text/javascript" src="./js/actions.js"></script>
     </body>
 
+
 </html>
-
-

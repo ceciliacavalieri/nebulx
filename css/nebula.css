@@ -9,9 +9,9 @@
     color: #FFF8E7;
     position: absolute; 
     display: none;
-    width: 100%;
     left: 0;
     right: 0;
+    cursor: pointer;
 }
 
 .texto0 {
@@ -31,160 +31,252 @@
     text-align: center;
     width: 100%;
     z-index: 3;
-    font-size: 20vh;
-    display: block!important;
+    font-size: 14vw;
 }
 
 .texto01en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 40vw;
 }
 
 .texto02en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 16vw;
 }
 
 .texto03en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 18vw;
 }
 
 .texto04en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 42vw;
 }
 
 .texto05en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 44vw;
 }
 
 .texto06en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 30vw;
 }
 
 .texto07en {
-    top: 25vh;
-    height: 50vh;
-    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     z-index: 3;
-    font-size: 8vw;
+    text-align: center;
 }
 
 .texto071en {
-    top: 65vh;
-    height: 50vh;
+    top: 20vh;
+    z-index: 3;
+    font-size: 6vw;
+    text-align: center;
+}
+
+.texto072en {
+    top: 55vh;
     text-align: center;
     z-index: 3;
-    font-size: 12vw;
+    font-size: 13vw;
 }
 
 .texto08en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 17vw;
 }
 
 .texto09en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 15vw;
 }
 
 .texto10en {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 12vw;
 }
 
 .texto11en {
-    top: 15vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 22vw;
+    font-size: 28vw;
 }
 
 .texto12en {
-    top: 15vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 20vw;
 }
 
 .texto13en {
-    top: 0vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 35vw;
+    font-size: 38vw;
 }
 
 .texto14en {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 10vw;
+    font-size: 12vw;
 }
 
 .texto15en {
-    top: 40vh;
-    height: 50vh;
+    top: 15%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
     text-align: center;
     z-index: 3;
-    font-size: 7vw;
+    font-size: 13vw;
 }
 
 .texto16en {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 15vw;
 }
 
 .texto17en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 15vw;
 }
 
 .texto18en {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 24vw;
 }
 
 .texto19en {
@@ -192,7 +284,176 @@
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 20vw;
+}
+
+.texto20en {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
+    text-align: center;
+    z-index: 10;
+    font-size: 20vw;
+}
+
+.texto2001en {
+    font-size: 2vw;
+    top: 2vh;
+    left: 20vw;
+}
+
+.texto2002en {
+    font-size: 2vw;
+    top: 5vh;
+    left: 0vw;
+}
+
+.texto2004en {
+    font-size: 2vw;
+    top: 10vh;
+    left: 5vw;
+}
+
+.texto2005en {
+    font-size: 2vw;
+    top: 30vh;
+    left: 0vw;
+}
+
+.texto2006en {
+    font-size: 2vw;
+    top: 35vh;
+    left: 10vw;
+}
+
+.texto2007en {
+    font-size: 2vw;
+    top: 45vh;
+    left: 0vw;
+}
+
+.texto2008en {
+    font-size: 2vw;
+    top: 55vh;
+    left: 20vw;
+}
+
+.texto2009en {
+    font-size: 2vw;
+    top: 60vh;
+    left: 3vw;
+}
+
+.texto2010en {
+    font-size: 2vw;
+    top: 70vh;
+    left: 5vw;
+}
+
+.texto2011en {
+    font-size: 2vw;
+    top: 60vh;
+    left: 40vw;
+}
+
+.texto2012en {
+    font-size: 2vw;
+    top: 70vh;
+    left: 45vw;
+}
+
+.texto2013en {
+    font-size: 2vw;
+    top: 74vh;
+    left: 20vw;
+}
+
+.texto2014en {
+    font-size: 2vw;
+    top: 80vh;
+    left: 30vw;
+}
+
+.texto2015en {
+    font-size: 2vw;
+    top: 85vh;
+    left: 45vw;
+}
+
+.texto2016en {
+    font-size: 2vw;
+    top: 3vh;
+    left: 65vw;
+}
+
+.texto2017en {
+    font-size: 2vw;
+    top: 10vh;
+    left: 55vw;
+}
+
+.texto2018en {
+    font-size: 2vw;
+    top: 20vh;
+    left: 60vw;
+}
+
+.texto2019en {
+    font-size: 2vw;
+    top: 30vh;
+    left: 55vw;
+}
+
+.texto2020en {
+    font-size: 2vw;
+    top: 65vh;
+    left: 15vw;
+}
+
+.texto2021en {
+    font-size: 2vw;
+    top: 50vh;
+    left: 50vw;
+}
+
+.texto2022en {
+    font-size: 2vw;
+    top: 65vh;
+    left: 50vw;
+}
+
+.texto2023en {
+    font-size: 2vw;
+    top: 70vh;
+    left: 60vw;
+}
+
+.texto2024en {
+    font-size: 2vw;
+    top: 80vh;
+    left: 55vw;
+}
+
+.texto2025en {
+    font-size: 2vw;
+    top: 90vh;
+    left: 60vw;
+}
+
+.texto2026en {
+    font-size: 2vw;
+    top: 18vh;
+    left: 33vw;
+}
+
+.texto2027en {
+    font-size: 2vw;
+    top: 25vh;
+    left: 35vw;
 }
 
 /* ESTILOS DOS TEXTOS EM FRANCÊS */
@@ -202,168 +463,434 @@
     height: 33vh;
     text-align: center;
     z-index: 3;
-    font-size: 20vh;
-    display: block!important;
+    font-size: 13vw;
 }
 
 .texto01fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 17vw;
 }
 
 .texto02fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 15vw;
 }
 
 .texto03fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 15vw;
 }
 
 .texto04fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 33vw;
 }
 
 .texto05fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 32vw;
 }
 
 .texto06fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 30vw;
 }
 
 .texto07fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.texto071fr {
+    top: 20vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 7vw;
+}
+
+.texto072fr {
+    top: 55vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 10vw;
+}
+
+.texto08fr {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 14vw;
+}
+
+.texto09fr {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 15vw;
+}
+
+.texto10fr {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 8vw;
 }
 
-.texto071fr {
-    top: 65vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 12vw;
-}
-
-.texto08fr {
-    top: 25vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 30vh;
-}
-
-.texto09fr {
-    top: 25vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 30vh;
-}
-
-.texto10fr {
-    top: 30vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 12vw;
-}
-
 .texto11fr {
-    top: 35vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 9vw;
+    font-size: 8vw;
 }
 
 .texto12fr {
-    top: 35vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 9vw;
+    font-size: 8vw;
 }
 
 .texto13fr {
-    top: 0vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 35vw;
 }
 
 .texto14fr {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 10vw;
+    font-size: 6vw;
 }
 
 .texto15fr {
-    top: 35vh;
-    height: 50vh;
+    top: 15%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
     text-align: center;
     z-index: 3;
-    font-size: 7vw;
+    font-size: 11vw;
 }
 
 .texto16fr {
-    top: 35vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 9vw;
+    font-size: 13vw;
 }
 
 .texto17fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 13vw;
 }
 
 .texto18fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 27vw;
 }
 
 .texto19fr {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 20vw;
+}
+
+.texto20fr {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
+    text-align: center;
+    z-index: 10;
+    font-size: 20vw;
+}
+
+.texto2001fr {
+    font-size: 2vw;
+    top: 2vh;
+    left: 20vw;
+}
+
+.texto2002fr {
+    font-size: 2vw;
+    top: 5vh;
+    left: 0vw;
+}
+
+.texto2004fr {
+    font-size: 2vw;
+    top: 10vh;
+    left: 5vw;
+}
+
+.texto2005fr {
+    font-size: 2vw;
+    top: 30vh;
+    left: 0vw;
+}
+
+.texto2006fr {
+    font-size: 2vw;
+    top: 35vh;
+    left: 10vw;
+}
+
+.texto2007fr {
+    font-size: 2vw;
+    top: 45vh;
+    left: 0vw;
+}
+
+.texto2008fr {
+    font-size: 2vw;
+    top: 55vh;
+    left: 20vw;
+}
+
+.texto2009fr {
+    font-size: 2vw;
+    top: 60vh;
+    left: 3vw;
+}
+
+.texto2010fr {
+    font-size: 2vw;
+    top: 70vh;
+    left: 5vw;
+}
+
+.texto2011fr {
+    font-size: 2vw;
+    top: 60vh;
+    left: 40vw;
+}
+
+.texto2012fr {
+    font-size: 2vw;
+    top: 70vh;
+    left: 45vw;
+}
+
+.texto2013fr {
+    font-size: 2vw;
+    top: 74vh;
+    left: 20vw;
+}
+
+.texto2014fr {
+    font-size: 2vw;
+    top: 80vh;
+    left: 30vw;
+}
+
+.texto2015fr {
+    font-size: 2vw;
+    top: 85vh;
+    left: 45vw;
+}
+
+.texto2016fr {
+    font-size: 2vw;
+    top: 3vh;
+    left: 65vw;
+}
+
+.texto2017fr {
+    font-size: 2vw;
+    top: 10vh;
+    left: 55vw;
+}
+
+.texto2018fr {
+    font-size: 2vw;
+    top: 20vh;
+    left: 60vw;
+}
+
+.texto2019fr {
+    font-size: 2vw;
+    top: 30vh;
+    left: 55vw;
+}
+
+.texto2020fr {
+    font-size: 2vw;
+    top: 65vh;
+    left: 15vw;
+}
+
+.texto2021fr {
+    font-size: 2vw;
+    top: 50vh;
+    left: 50vw;
+}
+
+.texto2022fr {
+    font-size: 2vw;
+    top: 65vh;
+    left: 50vw;
+}
+
+.texto2023fr {
+    font-size: 2vw;
+    top: 70vh;
+    left: 60vw;
+}
+
+.texto2024fr {
+    font-size: 2vw;
+    top: 80vh;
+    left: 55vw;
+}
+
+.texto2025fr {
+    font-size: 2vw;
+    top: 90vh;
+    left: 60vw;
+}
+
+.texto2026fr {
+    font-size: 2vw;
+    top: 18vh;
+    left: 33vw;
+}
+
+.texto2027fr {
+    font-size: 2vw;
+    top: 25vh;
+    left: 35vw;
 }
 
 /* ESTILOS DOS TEXTOS EM PORTUGUÊS */
@@ -373,89 +900,127 @@
     height: 33vh;
     text-align: center;
     z-index: 3;
-    font-size: 20vh;
-    display: block!important;
+    font-size: 12vw;
 }
 
 .texto01pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     width: 100%;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 17vw;
 }
 
 .texto02pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 19vw;
 }
 
 .texto03pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 18vw;
 }
 
 .texto04pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 37vw;
 }
 
 .texto05pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 40vw;
 }
 
 .texto06pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 30vw;
 }
 
 .texto07pt {
-    top: 25vh;
-    height: 50vh;
+    top: 20vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 80vh;
     text-align: center;
     z-index: 3;
-    font-size: 8vw;
 }
 
 .texto071pt {
-    top: 65vh;
-    height: 50vh;
+    top: 55vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 12vw;
+}
+
+.texto072pt {
+    top: 20vh;
     text-align: center;
     z-index: 3;
     font-size: 12vw;
 }
 
 .texto08pt {
-    top: 25vh;
+    top: 30vh;
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 17vw;
 }
 
 .texto09pt {
-    top: 25vh;
+    top: 27vh;
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 17vw;
 }
 
 .texto10pt {
@@ -463,7 +1028,7 @@
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 12vw;
+    font-size: 13vw;
 }
 
 .texto11pt {
@@ -483,7 +1048,7 @@
 }
 
 .texto13pt {
-    top: 0vh;
+    top: 10vh;
     height: 50vh;
     text-align: center;
     z-index: 3;
@@ -499,11 +1064,11 @@
 }
 
 .texto15pt {
-    top: 35vh;
+    top: 15vh;
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 7vw;
+    font-size: 13vw;
 }
 
 .texto16pt {
@@ -511,7 +1076,7 @@
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 9vw;
+    font-size: 10vw;
 }
 
 .texto17pt {
@@ -519,7 +1084,7 @@
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 15vw;
 }
 
 .texto18pt {
@@ -527,7 +1092,7 @@
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 14vw;
 }
 
 .texto19pt {
@@ -535,16 +1100,176 @@
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vh;
+    font-size: 20vw;
 }
 
 .texto20pt {
-    top: 25vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
-    z-index: 3;
-    font-size: 30vh;
-    display: block!important;
+    z-index: 10;
+    font-size: 20vw;
+}
+
+.texto2001pt {
+    font-size: 2vw;
+    top: 2vh;
+    left: 20vw;
+}
+
+.texto2002pt {
+    font-size: 2vw;
+    top: 5vh;
+    left: 0vw;
+}
+
+.texto2004pt {
+    font-size: 2vw;
+    top: 10vh;
+    left: 5vw;
+}
+
+.texto2005pt {
+    font-size: 2vw;
+    top: 30vh;
+    left: 0vw;
+}
+
+.texto2006pt {
+    font-size: 2vw;
+    top: 35vh;
+    left: 10vw;
+}
+
+.texto2007pt {
+    font-size: 2vw;
+    top: 45vh;
+    left: 0vw;
+}
+
+.texto2008pt {
+    font-size: 2vw;
+    top: 55vh;
+    left: 20vw;
+}
+
+.texto2009pt {
+    font-size: 2vw;
+    top: 60vh;
+    left: 3vw;
+}
+
+.texto2010pt {
+    font-size: 2vw;
+    top: 70vh;
+    left: 5vw;
+}
+
+.texto2011pt {
+    font-size: 2vw;
+    top: 60vh;
+    left: 40vw;
+}
+
+.texto2012pt {
+    font-size: 2vw;
+    top: 70vh;
+    left: 45vw;
+}
+
+.texto2013pt {
+    font-size: 2vw;
+    top: 74vh;
+    left: 20vw;
+}
+
+.texto2014pt {
+    font-size: 2vw;
+    top: 80vh;
+    left: 30vw;
+}
+
+.texto2015pt {
+    font-size: 2vw;
+    top: 85vh;
+    left: 45vw;
+}
+
+.texto2016pt {
+    font-size: 2vw;
+    top: 3vh;
+    left: 65vw;
+}
+
+.texto2017pt {
+    font-size: 2vw;
+    top: 10vh;
+    left: 55vw;
+}
+
+.texto2018pt {
+    font-size: 2vw;
+    top: 20vh;
+    left: 60vw;
+}
+
+.texto2019pt {
+    font-size: 2vw;
+    top: 30vh;
+    left: 55vw;
+}
+
+.texto2020pt {
+    font-size: 2vw;
+    top: 65vh;
+    left: 15vw;
+}
+
+.texto2021pt {
+    font-size: 2vw;
+    top: 50vh;
+    left: 50vw;
+}
+
+.texto2022pt {
+    font-size: 2vw;
+    top: 65vh;
+    left: 50vw;
+}
+
+.texto2023pt {
+    font-size: 2vw;
+    top: 70vh;
+    left: 60vw;
+}
+
+.texto2024pt {
+    font-size: 2vw;
+    top: 80vh;
+    left: 55vw;
+}
+
+.texto2025pt {
+    font-size: 2vw;
+    top: 90vh;
+    left: 60vw;
+}
+
+.texto2026pt {
+    font-size: 2vw;
+    top: 18vh;
+    left: 33vw;
+}
+
+.texto2027pt {
+    font-size: 2vw;
+    top: 25vh;
+    left: 35vw;
 }
 
 .video0 {
@@ -566,6 +1291,5 @@
     height: 100%; 
     min-width: 100%;
     min-height: 100%;
-    overflow: hidden;
     background-color: black;
   }
