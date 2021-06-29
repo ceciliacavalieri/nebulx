@@ -6,16 +6,19 @@
     </head>
 
     <body>
+        <!-- SETAS -->
+        <div id="proximo" class="proximo" onclick="showNext()"></div>
+        <div id="anterior" class="anterior" onclick="showPrevious()"></div>
+        
         <div class="video-container" onclick="showOpeningDream()">
             <video id="video" autoplay muted id="video" onended="onEndedVideo()"  onplay="onPlayVideo()">
-                <source src="videos/TELA 00 - TODOS - CONSTELAÇÃO MOLECULAR.mp4" type="video/mp4">
+                <source src="videos/00 PRIMEIRA TELA - CONSTELAÇÃO MOLECULAR COM PEDRA.mp4" type="video/mp4">
             </video>
         </div>
 
         <div id="texto00en" class="texto texto00en" onclick="showBirths()">opening dream</div>
         <div id="texto00fr" class="texto texto00fr" onclick="showNaissances()">rêve d'ouverture</div>
         <div id="texto00pt" class="texto texto00pt" onclick="showNascimentos()">sonho de abertura</div>
-    
 
         <!-- TEXTOS EM PORTUGUÊS -->
         <div id="texto01pt" class="texto texto01pt" onclick="showAViaLactea()">nascimentos</div>
@@ -35,8 +38,10 @@
         <div id="texto12pt" class="texto texto12pt" onclick="showPedra()">vesícula biliar distendida</div>
         <div id="texto13pt" class="texto texto13pt" onclick="showPaisEmMaternagem()">pedra</div>
         <div id="texto14pt" class="texto texto14pt" onclick="showOSoproNaBolhaQueEstoura()">pais de maternagem</div>
-        <div id="texto15pt" class="texto texto15pt" onclick="showSonhoDeFechamento()">o sopro na bolha</div>
-        <div id="texto15pt" class="texto texto15pt" onclick="showSonhoDeFechamento()">o sopro na bolha</div>que estoura
+        <div id="texto15pt" class="texto texto15pt" onclick="showSonhoDeFechamento()">
+            <div id="texto151pt" class="texto texto151pt">o sopro na bolha</div>
+            <div id="texto152pt" class="texto texto152pt">que estoura</div>
+        </div>
         <div id="texto16pt" class="texto texto16pt" onclick="showTodaMateria()">sonho de fechamento</div>
         <div id="texto17pt" class="texto texto17pt" onclick="showEsquecimento()">toda matéria</div>
         <div id="texto18pt" class="texto texto18pt" onclick="showCreditosParte1()">esquecimento</div>
@@ -88,7 +93,10 @@
         <div id="texto12en" class="texto texto12en" onclick="showStone()">gallbladder</div>
         <div id="texto13en" class="texto texto13en" onclick="showMotheringFathers()">stone</div>
         <div id="texto14en" class="texto texto14en" onclick="showTheBreathInTheBurstingBubble()">mothering fathers</div>
-        <div id="texto15en" class="texto texto15en" onclick="showClosingDream()">the breath in the<br>bursting bubble</div>
+        <div id="texto15en" class="texto texto15en" onclick="showClosingDream()">
+            <div id="texto151en" class="texto texto151en">the breath in the</div>
+            <div id="texto152en" class="texto texto152en">bursting bubble</div>
+        </div>
         <div id="texto16en" class="texto texto16en" onclick="showAllTheMatter()">closing dream</div>
         <div id="texto17en" class="texto texto17en" onclick="showOblivion()">all the matter</div>
         <div id="texto18en" class="texto texto18en" onclick="showCreditsPart1()">oblivion</div>
@@ -139,7 +147,10 @@
         <div id="texto12fr" class="texto texto12fr" onclick="showPierre()">vésicule biliaire distendue</div>
         <div id="texto13fr" class="texto texto13fr" onclick="showLesPeresQuiFontDuMaternage()">pierre</div>
         <div id="texto14fr" class="texto texto14fr" onclick="showLeSouffleDansLaBulleQuiEclate()">les pères qui font du maternage</div>
-        <div id="texto15fr" class="texto texto15fr" onclick="showReveDeCloture()">le souffle dans la <br>bulle qui éclate</div>
+        <div id="texto15fr" class="texto texto15fr" onclick="showReveDeCloture()">
+            <div id="texto151fr" class="texto texto151fr">le souffle dans la</div>
+            <div id="texto152fr" class="texto texto152fr">boulle qui éclate</div>
+        </div>
         <div id="texto16fr" class="texto texto16fr" onclick="showTouteLaMatiere()">rêve de clôture</div>
         <div id="texto17fr" class="texto texto17fr" onclick="showLOubli()">toute la matière</div>
         <div id="texto18fr" class="texto texto18fr" onclick="showCreditsFrPart1()">l’oubli</div>
@@ -171,10 +182,8 @@
         <div id="texto2025fr" class="texto texto2025fr">lait aigre de vache anonyme au microscope</div>
         <div id="texto2026fr" class="texto texto2026fr">son de l'hydrogène</div>
         <div id="texto2027fr" class="texto texto2027fr">web enablement luisa burini</div>
-
   
         <!-- AUDIO BASE -->
-        
         <audio id="audioBase" autoplay loop controls hidden="true">
             <source src="./audios/AUDIO 00 BASE DE TODOS OS QUADROS.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
