@@ -16,7 +16,6 @@ function showOpeningDream()
         showText("texto00en");
         showText("texto00fr");
         showText("texto00pt");
-        hideText("anterior");
     }
 }
 
@@ -93,10 +92,6 @@ function hideOpeningDream()
     hideText("texto00fr");
     hideText("texto00pt");
     isShowOpeningDream = false;
-    console.log("show text proximo");
-    showText("proximo");
-    console.log("show text anterior");
-    showText("anterior");
 }
 
 function showTextHidePrevious(numero, idioma)
@@ -223,8 +218,7 @@ function showPrevious()
     
     console.log("Numero atual: "+ numeroAtual + " idioma atual " + idiomaAtual)
 
-    var anterior = document.getElementById("anterior");
-    if(anterior.style.display == "block")
+    if(numeroAtual >= 1 && numeroAtual <= 20)
     {
         updateNumero(false);
 
@@ -232,8 +226,6 @@ function showPrevious()
         {
             isShowOpeningDream = true;
             showOpeningDream();
-            hideText("anterior");
-            hideText("proximo");
         }
         else
         {
@@ -455,10 +447,10 @@ function showCreditsPart1()
 {
     numeroAtual = 19;
     hideText("texto18en");
-    showText("proximo");
     changeVideoSource("./videos/en/TELA 19 EN LARVAS NOVAS.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("19", "en");
+    hideText("texto20en");
     hideText("texto2001en");
     hideText("texto2002en");
     hideText("texto2004en");
@@ -491,7 +483,6 @@ function showCreditsPart2()
 {
     numeroAtual = 20;
     hideText("texto19en");
-    hideText("proximo");
     changeVideoSource("./videos/TELA 20 - TODOS CRÉDITOS.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("20", "en");
@@ -705,6 +696,7 @@ function showCreditsFrPart1()
     changeVideoSource("./videos/fr/TELA 19 FR LARVAS NOVAS 1 2 (1).mp4");
     playAudio("audioBase");
     playVideoStopPrevious("19", "fr");   
+    hideText("texto20fr");
     hideText("texto2001fr");
     hideText("texto2002fr");
     hideText("texto2004fr");
@@ -737,7 +729,6 @@ function showCreditsFrPart2()
 {
     hideText("texto19fr");
     numeroAtual = 20;
-    hideText("proximo");
     changeVideoSource("./videos/TELA 20 - TODOS CRÉDITOS.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("20", "fr");   
@@ -950,6 +941,7 @@ function showCreditosParte1()
     changeVideoSource("./videos/pt/TELA 19 PT LARVAS NOVAS 1.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("19", "pt");
+    hideText("texto20pt");
     hideText("texto2001pt");
     hideText("texto2002pt");
     hideText("texto2004pt");
@@ -982,7 +974,6 @@ function showCreditosParte2()
 {
     hideText("texto19pt");
     numeroAtual = 20;
-    hideText("proximo");
     changeVideoSource("./videos/TELA 20 - TODOS CRÉDITOS.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("20", "pt");
