@@ -1,6 +1,7 @@
 var isShowOpeningDream = true;
 var numeroAtual = 0;
 var idiomaAtual = "";
+var isDuringNext = false;
 
 function showOpeningDream()
 {
@@ -16,6 +17,7 @@ function showOpeningDream()
         showText("texto00en");
         showText("texto00fr");
         showText("texto00pt");
+        hideText("logoStart");
     }
 }
 
@@ -29,6 +31,7 @@ function changeVideoSource(path)
 
 function showText(textId)
 {
+    console.log("show text " + textId);
     var texto = document.getElementById(textId);
     texto.style.display = "block";
 }
@@ -91,6 +94,7 @@ function hideOpeningDream()
     hideText("texto00en");
     hideText("texto00fr");
     hideText("texto00pt");
+    
     isShowOpeningDream = false;
 }
 
@@ -175,41 +179,62 @@ function updateNumero(isFoward)
     console.log("update numero " + numeroAtual);
 }
 
+
+
 function showNext()
 {
-    if(numeroAtual >= 0 && numeroAtual <= 19)
+    if(!isDuringNext)
     {
-        if(numeroAtual == 19)
+        if(numeroAtual >= 0 && numeroAtual <= 19)
         {
-            if(idiomaAtual === "fr")
+            isDuringNext = true;
+            console.log("showNext function " + Date.now())
+            console.log("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
+            showText("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual)
+            
+            setTimeout( function () {
+                isDuringNext = false;
+                hideText("texto" + padLeadingZeros(numeroAtual-1, 2) + idiomaAtual);
+                console.log("texto" + padLeadingZeros(numeroAtual-1, 2) + idiomaAtual);
+                console.log(" timeout function " + Date.now());
+            }, 5000);
+    
+            if(numeroAtual == 19)
             {
-                showCreditsFrPart2();
-            }
-            else
-            {
-                if(idiomaAtual === "pt")
+                if(idiomaAtual === "fr")
                 {
-                    showCreditosParte2();
+                    showCreditsFrPart2();
                 }
                 else
                 {
-                    if(idiomaAtual === "en")
+                    if(idiomaAtual === "pt")
                     {
-                        showCreditsPart2();
+                        showCreditosParte2();
+                    }
+                    else
+                    {
+                        if(idiomaAtual === "en")
+                        {
+                            showCreditsPart2();
+                        }
                     }
                 }
+    
             }
-
-        }
-        else
-        {
-            console.log("show next");
-            console.log("Numero atual: "+ numeroAtual + " idioma atual " + idiomaAtual)
-            var elementoAtual = document.getElementById("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
-            elementoAtual.click();
-            elementoAtual.style.display = "none"; 
+            else
+            {
+                console.log("show next");
+                console.log("Numero atual: "+ numeroAtual + " idioma atual " + idiomaAtual)
+                var elementoAtual = document.getElementById("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
+                elementoAtual.click();
+                //elementoAtual.style.display = "none"; 
+            }
         }
     }
+    else
+    {
+        console.log("Ainda nao pode ir para a proxima!!")
+    } 
 }
 
 function showPrevious()
@@ -288,7 +313,15 @@ function showBirths()
 
 function showTheMilkyWay()
 {
-    hideText("texto01en");
+    if(isDuringNext)
+    {
+        showText("texto01en");
+    }
+    else
+    {
+        hideText("texto01en");
+    }
+    
     numeroAtual = 2;
     changeVideoSource("./videos/en/TELA 02 EN NASCIMENTOS 1.mp4");
     playAudio("audioBase");
@@ -297,7 +330,15 @@ function showTheMilkyWay()
 
 function showMilkMoons()
 {
-    hideText("texto02en");
+    if(isDuringNext)
+    {
+        showText("texto02en");
+    }
+    else
+    {
+        hideText("texto02en");
+    }
+
     numeroAtual = 3;
     changeVideoSource("./videos/en/TELA 03 EN - A VIA LACTEA - VIA LÁCTEA NA PAREDE NO ESCURO.mp4");
     playAudio("audioBase");
@@ -306,7 +347,14 @@ function showMilkMoons()
 
 function showEwe()
 {
-    hideText("texto03en");
+    if(isDuringNext)
+    {
+        showText("texto03en");
+    }
+    else
+    {
+        hideText("texto03en");
+    }
     numeroAtual = 4;
     changeVideoSource("./videos/en/TELA 04 EN LUA DE LEITE OVELHA 1 2.mp4");
     playAudio("audioBase");
@@ -315,7 +363,14 @@ function showEwe()
 
 function showCow()
 {
-    hideText("texto04en");
+    if(isDuringNext)
+    {
+        showText("texto04en");
+    }
+    else
+    {
+        hideText("texto04en");
+    }
     numeroAtual = 5;
     changeVideoSource("./videos/en/TELA 05 EN - LUAS DE LEITE - VACA.mp4");
     playAudio("audioBase");
@@ -324,7 +379,15 @@ function showCow()
 
 function showMonikaEn()
 {
-    hideText("texto05en");
+    if(isDuringNext)
+    {
+        showText("texto05en");
+    }
+    else
+    {
+        hideText("texto05en");
+    }
+
     numeroAtual = 6;
     changeVideoSource("./videos/en/TELA 06 EN - LUAS DE LEITE - CABRA 1 2 (1).mp4");
     playAudio("audioBase");
@@ -333,7 +396,15 @@ function showMonikaEn()
 
 function showJourneyToTheCenterOfTheMoons()
 {
-    hideText("texto06en");
+    if(isDuringNext)
+    {
+        showText("texto06en");
+    }
+    else
+    {
+        hideText("texto06en");
+    }
+
     numeroAtual = 7;
     changeVideoSource("./videos/en/TELA 07 EN - LUAS DE LEITE - MONIKA.mp4");
     playAudio("audioBase");
@@ -342,9 +413,18 @@ function showJourneyToTheCenterOfTheMoons()
 
 function showMilkyTongue()
 {
-    hideText("texto07en");
-    hideText("texto071en");
-    hideText("texto072en");
+    if(isDuringNext)
+    {
+        showText("texto07en");
+        showText("texto071en");
+        showText("texto072en");
+    }
+    else
+    {
+        hideText("texto07en");
+        hideText("texto071en");
+        hideText("texto072en");
+    }
     numeroAtual = 8;
     changeVideoSource("./videos/en/TELA 08 EN - MINIMUNDO 1 2 2.mp4");
     playAudio("audioBase");
@@ -353,7 +433,14 @@ function showMilkyTongue()
 
 function showProducedWith()
 {
-    hideText("texto08en");
+    if(isDuringNext)
+    {
+        showText("texto08en");
+    }
+    else
+    {
+        hideText("texto08en");
+    }
     numeroAtual = 9;
     changeVideoSource("./videos/en/TELA 09 EN - MINIMUNDO 4.mp4");
     playAudio("audioBase");
@@ -362,7 +449,14 @@ function showProducedWith()
 
 function showTheHomeOfMany()
 {
-    hideText("texto09en");
+    if(isDuringNext)
+    {
+        showText("texto09en");
+    }
+    else
+    {
+        hideText("texto09en");
+    }
     numeroAtual = 10;
     changeVideoSource("./videos/en/TELA 10 EN - MINIMUNDO 2 2 2.mp4");
     playAudio("audioBase");
@@ -371,7 +465,14 @@ function showTheHomeOfMany()
 
 function showBwomb()
 {
-    hideText("texto10en");
+    if(isDuringNext)
+    {
+        showText("texto10en");
+    }
+    else
+    {
+        hideText("texto10en");
+    }
     numeroAtual = 11;
     changeVideoSource("./videos/en/TELA 11 EN - MINIMUNDO 3.mp4");
     playAudio("audioBase");
@@ -380,7 +481,14 @@ function showBwomb()
 
 function showGallbladder()
 {
-    hideText("texto11en");
+    if(isDuringNext)
+    {
+        showText("texto11en");
+    }
+    else
+    {
+        hideText("texto11en");
+    }
     numeroAtual = 12;
     changeVideoSource("./videos/en/TELA 12 EN - POEMA-LAUDO EMBRIÃO 1 2.mp4");
     playAudio("audioBase");
@@ -389,7 +497,14 @@ function showGallbladder()
 
 function showStone()
 {
-    hideText("texto12en");
+    if(isDuringNext)
+    {
+        showText("texto12en");
+    }
+    else
+    {
+        hideText("texto12en");
+    }
     numeroAtual = 13;
     changeVideoSource("./videos/en/TELA 13 EN - POEMA-LAUDO VESICULA.mp4");
     playAudio("audioBase");
@@ -398,7 +513,14 @@ function showStone()
 
 function showMotheringFathers()
 {
-    hideText("texto13en");
+    if(isDuringNext)
+    {
+        showText("texto13en");
+    }
+    else
+    {
+        hideText("texto13en");
+    }
     numeroAtual = 14;
     changeVideoSource("./videos/en/TELA 14 EN - PEDRA 1 2.mp4");
     playAudio("audioBase");
@@ -407,7 +529,14 @@ function showMotheringFathers()
 
 function showTheBreathInTheBurstingBubble()
 {
-    hideText("texto14en");
+    if(isDuringNext)
+    {
+        showText("texto14en");
+    }
+    else
+    {
+        hideText("texto14en");
+    }
     numeroAtual = 15;
     changeVideoSource("./videos/en/TELA 15 EN - PAIS EM MATERNAGEM - CAVALO MARINHO.mp4");
     playAudio("audioBase");
@@ -416,9 +545,18 @@ function showTheBreathInTheBurstingBubble()
 
 function showClosingDream()
 {
-    hideText("texto151en");
-    hideText("texto152en");
-    hideText("texto15en");
+    if(isDuringNext)
+    {
+        showText("texto151en");
+        showText("texto152en");
+        showText("texto15en");
+    }
+    else
+    {
+        hideText("texto151en");
+        hideText("texto152en");
+        hideText("texto15en");
+    }
     numeroAtual = 16;
     changeVideoSource("./videos/en/TELA 16 EN - LEVANHA 2 2 2.mp4");
     playAudio("audioBase");
@@ -427,7 +565,14 @@ function showClosingDream()
 
 function showAllTheMatter()
 {
-    hideText("texto16en");
+    if(isDuringNext)
+    {
+        showText("texto16en");
+    }
+    else
+    {
+        hideText("texto16en");
+    }
     numeroAtual = 17;
     changeVideoSource("./videos/en/TELA 17 EN - THE PLANET AND THE POOL.mp4");
     playAudio("audioBase");
@@ -436,7 +581,15 @@ function showAllTheMatter()
 
 function showOblivion()
 {
-    hideText("texto17en");
+    hideText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto17en");
+    }
+    else
+    {
+        hideText("texto17en");
+    }
     numeroAtual = 18;
     changeVideoSource("./videos/en/TELA 18 EN - ALVEOLOS 1 2.mp4");
     playAudio("audioBase");
@@ -445,8 +598,16 @@ function showOblivion()
 
 function showCreditsPart1()
 {
+    showText("logoEnd");
     numeroAtual = 19;
-    hideText("texto18en");
+    if(isDuringNext)
+    {
+        showText("texto18en");
+    }
+    else
+    {
+        hideText("texto18en");
+    }
     changeVideoSource("./videos/en/TELA 19 EN LARVAS NOVAS.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("19", "en");
@@ -481,8 +642,16 @@ function showCreditsPart1()
 
 function showCreditsPart2()
 {
+    showText("logoEnd");
     numeroAtual = 20;
-    hideText("texto19en");
+    if(isDuringNext)
+    {
+        showText("texto19en");
+    }
+    else
+    {
+        hideText("texto19en");
+    }
     changeVideoSource("./videos/TELA 20 - TODOS CRÉDITOS.mp4");
     playAudio("audioBase");
     playVideoStopPrevious("20", "en");
@@ -522,7 +691,6 @@ function showNaissances()
     numeroAtual = 1;
     idiomaAtual = "fr";
     hideOpeningDream();
-
     changeVideoSource("./videos/fr/TELA 01 FR - SONHO DE ABERTURA - NATA 1.mp4");
     playAudio("audioBase");
     playVideo();   
@@ -530,7 +698,14 @@ function showNaissances()
 
 function showLaVoieLactee()
 {
-    hideText("texto01fr");
+    if(isDuringNext)
+    {
+        showText("texto01fr");
+    }
+    else
+    {
+        hideText("texto01fr");
+    }
     numeroAtual = 2;
     changeVideoSource("./videos/fr/TELA 02 FR NASCIMENTOS 1.mp4");
     playAudio("audioBase");
@@ -539,7 +714,14 @@ function showLaVoieLactee()
 
 function showLunesDeLait()
 {
-    hideText("texto02fr");
+    if(isDuringNext)
+    {
+        showText("texto02fr");
+    }
+    else
+    {
+        hideText("texto02fr");
+    }
     numeroAtual = 3;
     changeVideoSource("./videos/fr/TELA 03 FR - A VIA LACTEA - VIA LÁCTEA NA PAREDE NO ESCURO 1 2.mp4");
     playAudio("audioBase");
@@ -548,7 +730,14 @@ function showLunesDeLait()
 
 function showChevre()
 {
-    hideText("texto03fr");
+    if(isDuringNext)
+    {
+        showText("texto03fr");
+    }
+    else
+    {
+        hideText("texto03fr");
+    }
     numeroAtual = 4;
     changeVideoSource("./videos/fr/TELA 04 FR LUA DE LEITE OVELHA.mp4");
     playAudio("audioBase");
@@ -557,7 +746,14 @@ function showChevre()
 
 function showVache()
 {
-    hideText("texto04fr");
+    if(isDuringNext)
+    {
+        showText("texto04fr");
+    }
+    else
+    {
+        hideText("texto04fr");
+    }
     numeroAtual = 5;
     changeVideoSource("./videos/fr/TELA 05 FR - LUAS DE LEITE - VACA 1 2.mp4");
     playAudio("audioBase");
@@ -566,7 +762,14 @@ function showVache()
 
 function showMonikaFr()
 {
-    hideText("texto05fr");
+    if(isDuringNext)
+    {
+        showText("texto05fr");
+    }
+    else
+    {
+        hideText("texto05fr");
+    }
     numeroAtual = 6;
     changeVideoSource("./videos/fr/TELA 06 FR - LUAS DE LEITE - CABRA.mp4");
     playAudio("audioBase");
@@ -575,7 +778,14 @@ function showMonikaFr()
 
 function showVoyageAuCentreDesLunes()
 {
-    hideText("texto06fr");
+    if(isDuringNext)
+    {
+        showText("texto06fr");
+    }
+    else
+    {
+        hideText("texto06fr");
+    }
     numeroAtual = 7;
     changeVideoSource("./videos/fr/TELA 07 FR - LUAS DE LEITE - MONIKA 1 2.mp4");
     playAudio("audioBase");
@@ -584,9 +794,18 @@ function showVoyageAuCentreDesLunes()
 
 function showLangueLactee()
 {
-    hideText("texto07fr");
-    hideText("texto071fr");
-    hideText("texto072fr");
+    if(isDuringNext)
+    {
+        showText("texto07fr");
+        showText("texto071fr");
+        showText("texto072fr");
+    }
+    else
+    {
+        hideText("texto07fr");
+        hideText("texto071fr");
+        hideText("texto072fr");
+    }
     numeroAtual = 8;
     changeVideoSource("./videos/fr/TELA 08 FR - MINIMUNDO 1.mp4");
     playAudio("audioBase");
@@ -595,7 +814,14 @@ function showLangueLactee()
 
 function showProduireAvec()
 {
-    hideText("texto08fr");
+    if(isDuringNext)
+    {
+        showText("texto08fr");
+    }
+    else
+    {
+        hideText("texto08fr");
+    }
     numeroAtual = 9;
     changeVideoSource("./videos/fr/TELA 09 FR - MINIMUNDO 4 2 2.mp4");
     playAudio("audioBase");
@@ -604,7 +830,14 @@ function showProduireAvec()
 
 function showLaMaisonDeTantDeGens()
 {
-    hideText("texto09fr");
+    if(isDuringNext)
+    {
+        showText("texto09fr");
+    }
+    else
+    {
+        hideText("texto09fr");
+    }
     numeroAtual = 10;
     changeVideoSource("./videos/fr/TELA 10 FR - MINIMUNDO 2.mp4");
     playAudio("audioBase");
@@ -613,7 +846,14 @@ function showLaMaisonDeTantDeGens()
 
 function showLEmbryonEstObserveAvec()
 {
-    hideText("texto10fr");
+    if(isDuringNext)
+    {
+        showText("texto10fr");
+    }
+    else
+    {
+        hideText("texto10fr");
+    }
     numeroAtual = 11;
     changeVideoSource("./videos/fr/TELA 11 FR - MINIMUNDO 3 2 2.mp4");
     playAudio("audioBase");
@@ -622,7 +862,14 @@ function showLEmbryonEstObserveAvec()
 
 function showVesiculeBiliaireDistendue()
 {
-    hideText("texto11fr");
+    if(isDuringNext)
+    {
+        showText("texto11fr");
+    }
+    else
+    {
+        hideText("texto11fr");
+    }
     numeroAtual = 12;
     changeVideoSource("./videos/fr/TELA 12 FR - POEMA-LAUDO EMBRIÃO.mp4");
     playAudio("audioBase");
@@ -631,7 +878,14 @@ function showVesiculeBiliaireDistendue()
 
 function showPierre()
 {
-    hideText("texto12fr");
+    if(isDuringNext)
+    {
+        showText("texto12fr");
+    }
+    else
+    {
+        hideText("texto12fr");
+    }
     numeroAtual = 13;
     changeVideoSource("./videos/fr/TELA 13 FR - POEMA-LAUDO VESICULA 1 2.mp4");
     playAudio("audioBase");
@@ -641,7 +895,14 @@ function showPierre()
 
 function showLesPeresQuiFontDuMaternage()
 {
-    hideText("texto13fr");
+    if(isDuringNext)
+    {
+        showText("texto13fr");
+    }
+    else
+    {
+        hideText("texto13fr");
+    }
     numeroAtual = 14;
     changeVideoSource("./videos/fr/TELA 14 FR - PEDRA.mp4");
     playAudio("audioBase");
@@ -650,7 +911,14 @@ function showLesPeresQuiFontDuMaternage()
 
 function showLeSouffleDansLaBulleQuiEclate()
 {
-    hideText("texto14fr");
+    if(isDuringNext)
+    {
+        showText("texto14fr");
+    }
+    else
+    {
+        hideText("texto14fr");
+    }
     numeroAtual = 15;
     changeVideoSource("./videos/fr/TELA 15 FR - PAIS EM MATERNAGEM - CAVALO MARINHO 1 2.mp4");
     playAudio("audioBase");
@@ -660,9 +928,18 @@ function showLeSouffleDansLaBulleQuiEclate()
 
 function showReveDeCloture()
 {
-    hideText("texto15fr");
-    hideText("texto151fr");
-    hideText("texto152fr");
+    if(isDuringNext)
+    {
+        showText("texto15fr");
+        showText("texto151fr");
+        showText("texto152fr");
+    }
+    else
+    {
+        hideText("texto15fr");
+        hideText("texto151fr");
+        hideText("texto152fr");
+    }
     numeroAtual = 16;
     changeVideoSource("./videos/fr/TELA 16 FR - LEVANHA 2.mp4");
     playAudio("audioBase");
@@ -672,7 +949,14 @@ function showReveDeCloture()
 
 function showTouteLaMatiere()
 {
-    hideText("texto16fr");
+    if(isDuringNext)
+    {
+        showText("texto16fr");
+    }
+    else
+    {
+        hideText("texto16fr");
+    }
     numeroAtual = 17;
     changeVideoSource("./videos/fr/TELA 17 FR - THE PLANET AND THE POOL 1 2.mp4");
     playAudio("audioBase");
@@ -681,7 +965,15 @@ function showTouteLaMatiere()
 
 function showLOubli()
 {
-    hideText("texto17fr");
+    hideText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto17fr");
+    }
+    else
+    {
+        hideText("texto17fr");
+    }
     numeroAtual = 18;
     changeVideoSource("./videos/fr/TELA 18 FR - ALVEOLOS.mp4");
     playAudio("audioBase");
@@ -691,7 +983,15 @@ function showLOubli()
 
 function showCreditsFrPart1()
 {
-    hideText("texto18fr");
+    showText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto18fr");
+    }
+    else
+    {
+        hideText("texto18fr");
+    }
     numeroAtual = 19;
     changeVideoSource("./videos/fr/TELA 19 FR LARVAS NOVAS 1 2 (1).mp4");
     playAudio("audioBase");
@@ -727,7 +1027,15 @@ function showCreditsFrPart1()
 
 function showCreditsFrPart2()
 {
-    hideText("texto19fr");
+    showText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto19fr");
+    }
+    else
+    {
+        hideText("texto19fr");
+    }
     numeroAtual = 20;
     changeVideoSource("./videos/TELA 20 - TODOS CRÉDITOS.mp4");
     playAudio("audioBase");
@@ -776,7 +1084,14 @@ function showNascimentos()
 function showAViaLactea()
 {
     console.log("Show Via Lactea");
-    hideText("texto01pt");
+    if(isDuringNext)
+    {
+        showText("texto01pt");
+    }
+    else
+    {
+        hideText("texto01pt");
+    }
     numeroAtual = 2;
     changeVideoSource("./videos/pt/TELA 02 PT NASCIMENTOS.mp4");
     playAudio("audioBase");
@@ -786,7 +1101,14 @@ function showAViaLactea()
 function showLuasDeLeite()
 {
     console.log("SHow Luas de Leite");
-    hideText("texto02pt");
+    if(isDuringNext)
+    {
+        showText("texto02pt");
+    }
+    else
+    {
+        hideText("texto02pt");
+    }
     numeroAtual = 3;
     changeVideoSource("./videos/pt/TELA 03 PT - A VIA LACTEA - VIA LÁCTEA NA PAREDE NO ESCURO 1.mp4");
     playAudio("audioBase");
@@ -795,8 +1117,15 @@ function showLuasDeLeite()
 
 function showCabra() 
 {
-    console.log("SHow Cabra");
-    hideText("texto03pt");
+    console.log("Show Cabra");
+    if(isDuringNext)
+    {
+        showText("texto03pt");
+    }
+    else
+    {
+        hideText("texto03pt");
+    }
     numeroAtual = 4;
     changeVideoSource("./videos/pt/TELA 04 PT LUA DE LEITE OVELHA 1.mp4");
     playAudio("audioBase");
@@ -805,8 +1134,15 @@ function showCabra()
 
 function showVaca() 
 {
-    console.log("SHow Vaca");
-    hideText("texto04pt");
+    console.log("Show Vaca");
+    if(isDuringNext)
+    {
+        showText("texto04pt");
+    }
+    else
+    {
+        hideText("texto04pt");
+    }
     numeroAtual = 5;
     changeVideoSource("./videos/pt/TELA 05 PT - LUAS DE LEITE - VACA 1.mp4");
     playAudio("audioBase");
@@ -815,7 +1151,14 @@ function showVaca()
 
 function showMonikaPt()
 {
-    hideText("texto05pt");
+    if(isDuringNext)
+    {
+        showText("texto05pt");
+    }
+    else
+    {
+        hideText("texto05pt");
+    }
     numeroAtual = 6;
     changeVideoSource("./videos/pt/TELA 06 PT - LUAS DE LEITE - CABRA 1.mp4");
     playAudio("audioBase");
@@ -824,7 +1167,14 @@ function showMonikaPt()
 
 function showViagemAoCentroDasLuas() 
 {
-    hideText("texto06pt");
+    if(isDuringNext)
+    {
+        showText("texto06pt");
+    }
+    else
+    {
+        hideText("texto06pt");
+    }
     numeroAtual = 7;
     changeVideoSource("./videos/pt/TELA 07 PT - LUAS DE LEITE - MONIKA 1.mp4");
     playAudio("audioBase");
@@ -833,9 +1183,18 @@ function showViagemAoCentroDasLuas()
 
 function showLinguaLactea() 
 {
-    hideText("texto07pt");
-    hideText("texto071pt");
-    hideText("texto072pt");
+    if(isDuringNext)
+    {
+        showText("texto07pt");
+        showText("texto071pt");
+        showText("texto072pt");
+    }
+    else
+    {
+        hideText("texto07pt");
+        hideText("texto071pt");
+        hideText("texto072pt");
+    }
     numeroAtual = 8;
     changeVideoSource("./videos/pt/TELA 08 PT - MINIMUNDO 1 2.mp4");
     playAudio("audioBase");
@@ -844,7 +1203,14 @@ function showLinguaLactea()
 
 function showProduzirCom() 
 {
-    hideText("texto08pt");
+    if(isDuringNext)
+    {
+        showText("texto08pt");
+    }
+    else
+    {
+        hideText("texto08pt");
+    }
     numeroAtual = 9;
     changeVideoSource("./videos/pt/TELA 09 PT - MINIMUNDO 4 2.mp4");
     playAudio("audioBase");
@@ -853,7 +1219,14 @@ function showProduzirCom()
 
 function showACasaDeMuites()
 {
-    hideText("texto09pt");
+    if(isDuringNext)
+    {
+        showText("texto09pt");
+    }
+    else
+    {
+        hideText("texto09pt");
+    }
     numeroAtual = 10;
     changeVideoSource("./videos/pt/TELA 10 PT - MINIMUNDO 2 2.mp4");
     playAudio("audioBase");
@@ -862,7 +1235,14 @@ function showACasaDeMuites()
 
 function showObservaSeEmbriaoCom()
 {
-    hideText("texto10pt");
+    if(isDuringNext)
+    {
+        showText("texto10pt");
+    }
+    else
+    {
+        hideText("texto10pt");
+    }
     numeroAtual = 11;
     changeVideoSource("./videos/pt/TELA 11 PT - MINIMUNDO 3 2.mp4");
     playAudio("audioBase");
@@ -871,7 +1251,14 @@ function showObservaSeEmbriaoCom()
 
 function showVesiculaBiliarDistendida()
 {
-    hideText("texto11pt");
+    if(isDuringNext)
+    {
+        showText("texto11pt");
+    }
+    else
+    {
+        hideText("texto11pt");
+    }
     numeroAtual = 12;
     changeVideoSource("./videos/pt/TELA 12 PT - POEMA-LAUDO EMBRIÃO 1.mp4");
     playAudio("audioBase");
@@ -880,7 +1267,14 @@ function showVesiculaBiliarDistendida()
 
 function showPedra() 
 {
-    hideText("texto12pt");
+    if(isDuringNext)
+    {
+        showText("texto12pt");
+    }
+    else
+    {
+        hideText("texto12pt");
+    }
     numeroAtual = 13;
     changeVideoSource("./videos/pt/TELA 13 PT - POEMA-LAUDO VESICULA 1.mp4");
     playAudio("audioBase");
@@ -889,7 +1283,14 @@ function showPedra()
 
 function showPaisEmMaternagem() 
 {
-    hideText("texto13pt");
+    if(isDuringNext)
+    {
+        showText("texto13pt");
+    }
+    else
+    {
+        hideText("texto13pt");
+    }
     numeroAtual = 14;
     changeVideoSource("./videos/pt/TELA 14 PT - PEDRA 1.mp4");
     playAudio("audioBase");
@@ -898,7 +1299,14 @@ function showPaisEmMaternagem()
 
 function showOSoproNaBolhaQueEstoura()
 {
-    hideText("texto14pt");
+    if(isDuringNext)
+    {
+        showText("texto14pt");
+    }
+    else
+    {
+        hideText("texto14pt");
+    }
     changeVideoSource("./videos/pt/TELA 15 PT - PAIS EM MATERNAGEM - CAVALO MARINHO 1.mp4");
     numeroAtual = 15;
     playAudio("audioBase");
@@ -907,9 +1315,18 @@ function showOSoproNaBolhaQueEstoura()
 
 function showSonhoDeFechamento()
 {
-    hideText("texto15pt");
-    hideText("texto151pt");
-    hideText("texto152pt");
+    if(isDuringNext)
+    {
+        showText("texto15pt");
+        showText("texto151pt");
+        showText("texto152pt");
+    }
+    else
+    {
+        hideText("texto15pt");
+        hideText("texto151pt");
+        hideText("texto152pt");
+    }
     numeroAtual = 16;
     changeVideoSource("./videos/pt/TELA 16 PT - LEVANHA 2 2.mp4");
     playAudio("audioBase");
@@ -918,7 +1335,15 @@ function showSonhoDeFechamento()
 
 function showTodaMateria()
 {
-    hideText("texto16pt");
+    if(isDuringNext)
+    {
+        showText("texto16pt");
+    }
+    else
+    {
+        hideText("texto16pt");
+    }
+
     numeroAtual = 17;
     changeVideoSource("./videos/pt/TELA 17 PT - THE PLANET AND THE POOL 1.mp4");
     playAudio("audioBase");
@@ -927,7 +1352,15 @@ function showTodaMateria()
 
 function showEsquecimento()
 {
-    hideText("texto17pt");
+    hideText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto17pt");
+    }
+    else
+    {
+        hideText("texto17pt");
+    }
     numeroAtual = 18;
     changeVideoSource("./videos/pt/TELA 18 PT - ALVEOLOS 1.mp4");
     playAudio("audioBase");
@@ -936,7 +1369,15 @@ function showEsquecimento()
 
 function showCreditosParte1()
 {
-    hideText("texto18pt");
+    showText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto18pt");
+    }
+    else
+    {
+        hideText("texto18pt");
+    }
     numeroAtual = 19;
     changeVideoSource("./videos/pt/TELA 19 PT LARVAS NOVAS 1.mp4");
     playAudio("audioBase");
@@ -972,7 +1413,15 @@ function showCreditosParte1()
 
 function showCreditosParte2()
 {
-    hideText("texto19pt");
+    showText("logoEnd");
+    if(isDuringNext)
+    {
+        showText("texto19pt");
+    }
+    else
+    {
+        hideText("texto19pt");
+    }
     numeroAtual = 20;
     changeVideoSource("./videos/TELA 20 - TODOS CRÉDITOS.mp4");
     playAudio("audioBase");
