@@ -8,6 +8,7 @@
     font-family: Helvetica;
     font-style: italic;
     color: #FFF8E7;
+    background-color: transparent;
     position: absolute; 
     display: none;
     left: 0;
@@ -78,8 +79,7 @@
 
 /* ESTILOS DOS TEXTOS EM INGLÊS */
 .texto00en {
-    top: 2vh;
-    height: 33vh;
+    top: 0vh;
     text-align: center;
     width: 100%;
     z-index: 3;
@@ -1041,7 +1041,7 @@
 
 /* ESTILOS DOS TEXTOS EM PORTUGUÊS */
 .texto00pt {
-    top: 66vh;
+    bottom: 0;
     height: 33vh;
     text-align: center;
     z-index: 3;
