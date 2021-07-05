@@ -15,6 +15,10 @@
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
 }
 
 .texto0 {
@@ -105,7 +109,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 16vw;
+    font-size: 16.3vw;
 }
 
 .texto03en {
@@ -118,7 +122,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 18vw;
+    font-size: 19.7vw;
 }
 
 .texto04en {
@@ -128,10 +132,10 @@
     right: 0;
     width: 100%;
     height: 100%;
-    line-height: 95vh;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 42vw;
+    font-size: 55vw;
 }
 
 .texto05en {
@@ -141,10 +145,10 @@
     right: 0;
     width: 100%;
     height: 100%;
-    line-height: 95vh;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 47vw;
+    font-size: 53vw;
 }
 
 .texto06en {
@@ -157,7 +161,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vw;
+    font-size: 31vw;
 }
 
 .texto07en {
@@ -172,17 +176,17 @@
 }
 
 .texto071en {
-    top: 20vh;
+    top: 30vh;
     z-index: 3;
-    font-size: 6vw;
+    font-size: 6.4vw;
     text-align: center;
 }
 
 .texto072en {
-    top: 55vh;
+    top: 45vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 13.5vw;
 }
 
 .texto08en {
@@ -195,7 +199,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 17vw;
+    font-size: 17.5vw;
 }
 
 .texto09en {
@@ -208,7 +212,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 15.5vw;
 }
 
 .texto10en {
@@ -221,7 +225,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 12vw;
+    font-size: 12.2vw;
 }
 
 .texto11en {
@@ -234,7 +238,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 28vw;
+    font-size: 31vw;
 }
 
 .texto12en {
@@ -257,10 +261,10 @@
     right: 0;
     width: 100%;
     height: 100%;
-    line-height: 95vh;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 38vw;
+    font-size: 40.5vw;
 }
 
 .texto14en {
@@ -273,7 +277,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 12vw;
+    font-size: 12.5vw;
 }
 
 .texto15en {
@@ -288,17 +292,17 @@
 }
 
 .texto151en {
-    top: 15vh;
+    top: 20vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 13.5vw;
 }
 
 .texto152en {
     top: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 14.5vw;
 }
 
 .texto16en {
@@ -311,7 +315,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 16vw;
 }
 
 .texto17en {
@@ -324,7 +328,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 17vw;
 }
 
 .texto18en {
@@ -337,25 +341,20 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 24vw;
+    font-size: 29.7vw;
 }
 
 .texto19en {
-    top: 25vh;
+    top: 20vh;
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 20vw;
+    font-size: 10vw;
 }
 
 .texto20en {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 95vh;
+    top: 20vh;
+    height: 50vh;
     text-align: center;
     z-index: 0;
     font-size: 10vw;
@@ -393,7 +392,7 @@
 .texto2006en {
     font-size: 1vw;
     top: 35vh;
-    left: 18vw;
+    left: 78vw;
     cursor: default!important;
 }
 
@@ -476,14 +475,14 @@
 
 .texto2018en {
     font-size: 1vw;
-    top: 20vh;
+    top: 18vh;
     left: 63vw;
     cursor: default!important;
 }
 
 .texto2019en {
     font-size: 1vw;
-    top: 30vh;
+    top: 25vh;
     left: 58vw;
     cursor: default!important;
 }
@@ -498,14 +497,14 @@
 .texto2021en {
     font-size: 1vw;
     top: 50vh;
-    left: 50vw;
+    left: 60vw;
     cursor: default!important;
 }
 
 .texto2022en {
     font-size: 1vw;
     top: 65vh;
-    left: 54vw;
+    left: 65vw;
     cursor: default!important;
 }
 
@@ -544,6 +543,20 @@
     cursor: default!important;
 }
 
+.texto2028en {
+    font-size: 1vw;
+    top: 95vh;
+    left: 60vw;
+    cursor: default!important;
+}
+
+.texto2029en {
+    font-size: 1vw;
+    top: 90vh;
+    left: 20vw;
+    cursor: default!important;
+}
+
 /* ESTILOS DOS TEXTOS EM FRANCÊS */
 .texto00fr {
     top: 35vh;
@@ -563,7 +576,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 17vw;
+    font-size: 20vw;
 }
 
 .texto02fr {
@@ -576,7 +589,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 17vw;
 }
 
 .texto03fr {
@@ -589,7 +602,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 18.5vw;
 }
 
 .texto04fr {
@@ -602,7 +615,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 33vw;
+    font-size: 33.7vw;
 }
 
 .texto05fr {
@@ -615,7 +628,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 32vw;
+    font-size: 38vw;
 }
 
 .texto06fr {
@@ -628,7 +641,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 30vw;
+    font-size: 31vw;
 }
 
 .texto07fr {
@@ -643,17 +656,17 @@
 }
 
 .texto071fr {
-    top: 20vh;
+    top: 30vh;
     text-align: center;
     z-index: 3;
-    font-size: 7vw;
+    font-size: 8vw;
 }
 
 .texto072fr {
-    top: 55vh;
+    top: 45vh;
     text-align: center;
     z-index: 3;
-    font-size: 10vw;
+    font-size: 11.5vw;
 }
 
 .texto08fr {
@@ -666,7 +679,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 16.7vw;
 }
 
 .texto09fr {
@@ -679,7 +692,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 15vw;
+    font-size: 16.2vw;
 }
 
 .texto10fr {
@@ -692,7 +705,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 8vw;
+    font-size: 8.7vw;
 }
 
 .texto11fr {
@@ -705,7 +718,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 8vw;
+    font-size: 8.2vw;
 }
 
 .texto12fr {
@@ -718,7 +731,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 8vw;
+    font-size: 8.6vw;
 }
 
 .texto13fr {
@@ -728,10 +741,10 @@
     right: 0;
     width: 100%;
     height: 100%;
-    line-height: 95vh;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 35vw;
+    font-size: 38vw;
 }
 
 .texto14fr {
@@ -744,7 +757,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 6vw;
+    font-size: 7vw;
 }
 
 .texto15fr {
@@ -759,19 +772,19 @@
 }
 
 .texto151fr {
-    top: 15vh;
+    top: 20vh;
     height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 12vw;
+    font-size: 13.3vw;
 }
 
 .texto152fr {
-    top: 55vh;
+    top: 50vh;
     height: 50vh;
     text-align: center;
     z-index: 20;
-    font-size: 11vw;
+    font-size: 13.8vw;
 }
 
 .texto16fr {
@@ -784,7 +797,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 15.1vw;
 }
 
 .texto17fr {
@@ -797,7 +810,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 14.5vw;
 }
 
 .texto18fr {
@@ -810,33 +823,23 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 27vw;
+    font-size: 38.3vw;
 }
 
 .texto19fr {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 95vh;
+    top: 20vh;
+    height: 50vh;
     text-align: center;
     z-index: 3;
-    font-size: 20vw;
+    font-size: 10vw;
 }
 
 .texto20fr {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 95vh;
+    top: 20vh;
+    height: 50vh;
     text-align: center;
     z-index: 0;
-    font-size: 8vw;
+    font-size: 10vw;
     cursor: default!important;
 }
 
@@ -871,7 +874,7 @@
 .texto2006fr {
     font-size: 1vw;
     top: 35vh;
-    left: 18vw;
+    left: 78vw;
     cursor: default!important;
 }
 
@@ -899,7 +902,7 @@
 .texto2010fr {
     font-size: 1vw;
     top: 70vh;
-    left: 19vw;
+    left: 10vw;
     cursor: default!important;
 }
 
@@ -961,29 +964,29 @@
 
 .texto2019fr {
     font-size: 1vw;
-    top: 30vh;
-    left: 58vw;
+    top: 23vh;
+    left: 85vw;
     cursor: default!important;
 }
 
 .texto2020fr {
     font-size: 1vw;
     top: 65vh;
-    left: 21vw;
+    left: 26vw;
     cursor: default!important;
 }
 
 .texto2021fr {
     font-size: 1vw;
-    top: 50vh;
-    left: 50vw;
+    top: 45vh;
+    left: 60vw;
     cursor: default!important;
 }
 
 .texto2022fr {
     font-size: 1vw;
     top: 65vh;
-    left: 54vw;
+    left: 65vw;
     cursor: default!important;
 }
 
@@ -1017,8 +1020,22 @@
 
 .texto2027fr {
     font-size: 1vw;
-    top: 25vh;
+    top: 13vh;
     left: 39vw;
+    cursor: default!important;
+}
+
+.texto2028fr {
+    font-size: 1vw;
+    top: 88vh;
+    left: 30vw;
+    cursor: default!important;
+}
+
+.texto2029fr {
+    font-size: 1vw;
+    top: 95vh;
+    left: 20vw;
     cursor: default!important;
 }
 
@@ -1042,7 +1059,7 @@
     text-align: center;
     width: 100%;
     z-index: 3;
-    font-size: 18vw;
+    font-size: 17.8vw;
 }
 
 .texto02pt {
@@ -1055,7 +1072,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 19vw;
+    font-size: 19.8vw;
 }
 
 .texto03pt {
@@ -1068,7 +1085,7 @@
     line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 18vw;
+    font-size: 18.8vw;
 }
 
 .texto04pt {
@@ -1078,10 +1095,10 @@
     right: 0;
     width: 100%;
     height: 100%;
-    line-height: 95vh;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 40vw;
+    font-size: 40.5vw;
 }
 
 .texto05pt {
@@ -1091,10 +1108,10 @@
     right: 0;
     width: 100%;
     height: 100%;
-    line-height: 95vh;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 45vw;
+    font-size: 48vw;
 }
 
 .texto06pt {
@@ -1122,70 +1139,105 @@
 }
 
 .texto071pt {
-    top: 15vh;
+    top: 30vh;
     text-align: center;
     z-index: 3;
-    font-size: 9vw;
+    font-size: 8.5vw;
 }
 
 .texto072pt {
-    top: 55vh;
+    top: 45vh;
     text-align: center;
     z-index: 3;
-    font-size: 14vw;
+    font-size: 13.6vw;
 }
 
 .texto08pt {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 17.5vw;
+    font-size: 17.6vw;
 }
 
 .texto09pt {
-    top: 27vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 17vw;
 }
 
 .texto10pt {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 13vw;
 }
 
 .texto11pt {
-    top: 35vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 9vw;
 }
 
 .texto12pt {
-    top: 35vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
-    font-size: 9vw;
+    font-size: 9.1vw;
 }
 
 .texto13pt {
-    top: 10vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 90vh;
     text-align: center;
     z-index: 3;
-    font-size: 36vw;
+    font-size: 38vw;
 }
 
 .texto14pt {
-    top: 30vh;
-    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
     text-align: center;
     z-index: 3;
     font-size: 10.5vw;
@@ -1203,52 +1255,20 @@
 }
 
 .texto151pt {
-    top: 15vh;
+    top: 20vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 13.5vw;
 }
 
 .texto152pt {
-    top: 55vh;
+    top: 45vh;
     text-align: center;
     z-index: 3;
-    font-size: 13vw;
+    font-size: 19vw;
 }
 
 .texto16pt {
-    top: 35vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 10vw;
-}
-
-.texto17pt {
-    top: 25vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 17vw;
-}
-
-.texto18pt {
-    top: 25vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 17vw;
-}
-
-.texto19pt {
-    top: 25vh;
-    height: 50vh;
-    text-align: center;
-    z-index: 3;
-    font-size: 22vw;
-}
-
-.texto20pt {
     top: 0;
     bottom: 0;
     left: 0;
@@ -1256,6 +1276,48 @@
     width: 100%;
     height: 100%;
     line-height: 95vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 10.2vw;
+}
+
+.texto17pt {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 18vw;
+}
+
+.texto18pt {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 95vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 16vw;
+}
+
+.texto19pt {
+    top: 20vh;
+    height: 50vh;
+    text-align: center;
+    z-index: 3;
+    font-size: 10vw;
+}
+
+.texto20pt {
+    top: 20vh;
+    height: 50vh;
     text-align: center;
     z-index: 0;
     font-size: 10vw;
@@ -1292,8 +1354,8 @@
 
 .texto2006pt {
     font-size: 1vw;
-    top: 35vh;
-    left: 18vw;
+    top: 45vh;
+    left: 25vw;
     cursor: default!important;
 }
 
@@ -1334,8 +1396,8 @@
 
 .texto2012pt {
     font-size: 1vw;
-    top: 70vh;
-    left: 55vw;
+    top: 75vh;
+    left: 50vw;
     cursor: default!important;
 }
 
@@ -1377,14 +1439,14 @@
 .texto2018pt {
     font-size: 1vw;
     top: 20vh;
-    left: 63vw;
+    left: 70vw;
     cursor: default!important;
 }
 
 .texto2019pt {
     font-size: 1vw;
-    top: 30vh;
-    left: 58vw;
+    top: 45vh;
+    left: 68vw;
     cursor: default!important;
 }
 
@@ -1405,14 +1467,14 @@
 .texto2022pt {
     font-size: 1vw;
     top: 65vh;
-    left: 54vw;
+    left: 65vw;
     cursor: default!important;
 }
 
 .texto2023pt {
     font-size: 1vw;
     top: 70vh;
-    left: 69vw;
+    left: 60vw;
     cursor: default!important;
 }
 
@@ -1432,15 +1494,36 @@
 
 .texto2026pt {
     font-size: 1vw;
-    top: 18vh;
-    left: 36vw;
+    top: 12vh;
+    left: 30vw;
     cursor: default!important;
 }
 
 .texto2027pt {
     font-size: 1vw;
-    top: 25vh;
-    left: 39vw;
+    top: 95vh;
+    left: 75vw;
+    cursor: default!important;
+}
+
+.texto2028pt {
+    font-size: 1vw;
+    top: 80vh;
+    left: 10vw;
+    cursor: default!important;
+}
+
+.texto2029pt {
+    font-size: 1vw;
+    top: 95vh;
+    left: 30vw;
+    cursor: default!important;
+}
+
+.texto2030pt {
+    font-size: 1vw;
+    top: 20vh;
+    left: 55vw;
     cursor: default!important;
 }
 

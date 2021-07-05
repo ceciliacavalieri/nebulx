@@ -2,6 +2,7 @@ var isShowOpeningDream = true;
 var numeroAtual = 0;
 var idiomaAtual = "";
 var isDuringNext = false;
+var didAudioEnd = false;
 
 function showOpeningDream()
 {
@@ -12,6 +13,7 @@ function showOpeningDream()
     if(isShowOpeningDream)
     {
         numeroAtual = 0;
+        idiomaAtual = "";
         playVideo();
         changeVideoSource("videos/00 PRIMEIRA TELA - CONSTELAÇÃO MOLECULAR COM PEDRA.mp4");
         showText("texto00en");
@@ -33,7 +35,10 @@ function showText(textId)
 {
     console.log("show text " + textId);
     var texto = document.getElementById(textId);
-    texto.style.display = "block";
+    if(texto.style != null)
+    {
+        texto.style.display = "block";
+    }
 }
 
 function hideText(textId)
@@ -117,25 +122,61 @@ function padLeadingZeros(num, size) {
 function onEndedAudio(numero, idioma)
 {
     console.log("AUDIO " + numero + " ENDED " + idioma);
+    didAudioEnd = true;
+
+    if(numero + 1 > 0 && numero + 1 <= 20)
+    {
+        if((numero + 1) == "07")
+        {
+            hideText("texto" + "071" + idioma);
+            hideText("texto" + "072" + idioma);
+            hideText("texto" + "07" + idioma);
+            
+        }
+        if((numero + 1) == "15")
+        {
+            hideText("texto" + "151" + idioma);
+            hideText("texto" + "152" + idioma);
+            hideText("texto" + "15" + idioma);
+        }
+        hideText("texto" + padLeadingZeros( numero + 1 , 2) + idioma);
+    }
+
+    if(numero - 1 > 0 && numero - 1 <= 20)
+    {
+        if((numero - 1) == "07")
+        {
+            hideText("texto" + "071" + idioma);
+            hideText("texto" + "072" + idioma);
+            hideText("texto" + "07" + idioma);
+            
+        }
+        if((numero - 1) == "15")
+        {
+            hideText("texto" + "151" + idioma);
+            hideText("texto" + "152" + idioma);
+            hideText("texto" + "15" + idioma);
+        }
+        hideText("texto" + padLeadingZeros( numero - 1 , 2) + idioma);
+    }
+
 
     if(numeroAtual > 0 && numeroAtual <= 20)
     {
         if(numero == "07")
         {
-            var texto071 = document.getElementById("texto" + "071" + idioma);
-            texto071.style.display = "block";
-            var texto072 = document.getElementById("texto" + "072" + idioma);
-            texto072.style.display = "block";
+            showText("texto" + "071" + idioma);
+            showText("texto" + "072" + idioma);
+            showText("texto" + "07" + idioma);
+            
         }
         if(numero == "15")
         {
-            var texto151 = document.getElementById("texto" + "151" + idioma);
-            texto151.style.display = "block";
-            var texto152 = document.getElementById("texto" + "152" + idioma);
-            texto152.style.display = "block";
+            showText("texto" + "151" + idioma);
+            showText("texto" + "152" + idioma);
+            showText("texto" + "15" + idioma);
         }
-        var texto = document.getElementById("texto" + numero + idioma);
-        texto.style.display = "block";
+        showText("texto" + numero + idioma);
     }
 
 }
@@ -151,7 +192,7 @@ function onEndedVideo()
     }
     else
     {
-        console.log("Numero atual: "+ numeroAtual + " idioma atual " + idiomaAtual)
+        console.log("onEndedVideo Numero atual: "+ numeroAtual + " idioma atual " + idiomaAtual)
         onEndedAudio(padLeadingZeros(numeroAtual, 2), idiomaAtual);
         updateNumero(true);
     }
@@ -183,21 +224,25 @@ function updateNumero(isFoward)
 
 function showNext()
 {
-    if(!isDuringNext)
+    if(!isDuringNext && !didAudioEnd)
     {
         if(numeroAtual >= 0 && numeroAtual <= 19)
         {
             isDuringNext = true;
             console.log("showNext function " + Date.now())
-            console.log("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
-            showText("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual)
+            console.log("showNext function texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
+            if(idiomaAtual != "")
+            {
+                showText("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual)
             
-            setTimeout( function () {
-                isDuringNext = false;
-                hideText("texto" + padLeadingZeros(numeroAtual-1, 2) + idiomaAtual);
-                console.log("texto" + padLeadingZeros(numeroAtual-1, 2) + idiomaAtual);
-                console.log(" timeout function " + Date.now());
-            }, 5000);
+                setTimeout( function () {
+                    isDuringNext = false;
+                    hideText("texto" + padLeadingZeros(numeroAtual-1, 2) + idiomaAtual);
+                    console.log("showNext function texto" + padLeadingZeros(numeroAtual-1, 2) + idiomaAtual);
+                    console.log("showNext function timeout function " + Date.now());
+                }, 5000);
+            }
+
     
             if(numeroAtual == 19)
             {
@@ -225,8 +270,11 @@ function showNext()
             {
                 console.log("show next");
                 console.log("Numero atual: "+ numeroAtual + " idioma atual " + idiomaAtual)
-                var elementoAtual = document.getElementById("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
-                elementoAtual.click();
+                if(idiomaAtual != "")
+                {
+                    var elementoAtual = document.getElementById("texto" + padLeadingZeros(numeroAtual, 2) + idiomaAtual);
+                    elementoAtual.click();
+                }
                 //elementoAtual.style.display = "none"; 
             }
         }
@@ -296,6 +344,7 @@ function showPrevious()
 function onPlayVideo() 
 {
     console.log("On play video")
+    didAudioEnd = false;
 }
 
 // SHOW PAGES IN ENGLISH
@@ -305,6 +354,7 @@ function showBirths()
     console.log("Show Births");
     numeroAtual = 1;
     idiomaAtual = "en";
+    isDuringNext = false;
     hideOpeningDream();
     changeVideoSource("./videos/en/TELA 01 EN - SONHO DE ABERTURA - NATA.mp4");
     playAudio("audioBase");
@@ -598,7 +648,7 @@ function showOblivion()
 
 function showCreditsPart1()
 {
-    showText("logoEnd");
+    hideText("logoEnd");
     numeroAtual = 19;
     if(isDuringNext)
     {
@@ -638,6 +688,9 @@ function showCreditsPart1()
     hideText("texto2025en");
     hideText("texto2026en");
     hideText("texto2027en");
+    hideText("texto2028en");
+    hideText("texto2029en");
+    hideText("texto2030en");
 }
 
 function showCreditsPart2()
@@ -681,6 +734,8 @@ function showCreditsPart2()
     showText("texto2025en");
     showText("texto2026en");
     showText("texto2027en");
+    showText("texto2028en");
+    showText("texto2029en");
 }
 
 // SHOW PAGES IN FRENCH
@@ -778,6 +833,8 @@ function showMonikaFr()
 
 function showVoyageAuCentreDesLunes()
 {
+
+    console.log("showVoyageAuCentreDesLunes is during next? " + isDuringNext);
     if(isDuringNext)
     {
         showText("texto06fr");
@@ -794,6 +851,7 @@ function showVoyageAuCentreDesLunes()
 
 function showLangueLactee()
 {
+    console.log("showLangueLactee is during next? " + isDuringNext);
     if(isDuringNext)
     {
         showText("texto07fr");
@@ -983,7 +1041,7 @@ function showLOubli()
 
 function showCreditsFrPart1()
 {
-    showText("logoEnd");
+    hideText("logoEnd");
     if(isDuringNext)
     {
         showText("texto18fr");
@@ -1023,6 +1081,8 @@ function showCreditsFrPart1()
     hideText("texto2025fr");
     hideText("texto2026fr");
     hideText("texto2027fr");
+    hideText("texto2028fr");
+    hideText("texto2029fr");
 }
 
 function showCreditsFrPart2()
@@ -1066,6 +1126,8 @@ function showCreditsFrPart2()
     showText("texto2025fr");
     showText("texto2026fr");
     showText("texto2027fr");
+    showText("texto2028fr");
+    showText("texto2029fr");
 }
 
 // SHOW PAGES IN PORTUGUESE
@@ -1075,6 +1137,7 @@ function showNascimentos()
     console.log("Show Nascimentos");
     idiomaAtual = "pt";
     numeroAtual = 1;
+    isDuringNext = false;
     hideOpeningDream();
     changeVideoSource("./videos/pt/TELA 01 PT - SONHO DE ABERTURA - NATA 1.mp4");
     playAudio("audioBase");
@@ -1369,7 +1432,7 @@ function showEsquecimento()
 
 function showCreditosParte1()
 {
-    showText("logoEnd");
+    hideText("logoEnd");
     if(isDuringNext)
     {
         showText("texto18pt");
@@ -1409,6 +1472,9 @@ function showCreditosParte1()
     hideText("texto2025pt");
     hideText("texto2026pt");
     hideText("texto2027pt");
+    hideText("texto2028pt");
+    hideText("texto2029pt");
+    hideText("texto2030pt");
 }
 
 function showCreditosParte2()
@@ -1452,4 +1518,7 @@ function showCreditosParte2()
     showText("texto2025pt");
     showText("texto2026pt");
     showText("texto2027pt");
+    showText("texto2028pt");
+    showText("texto2029pt");
+    showText("texto2030pt");
 }
