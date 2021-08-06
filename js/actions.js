@@ -52,7 +52,6 @@ function playVideo()
 {
     var video = document.getElementById("video");
     
-
     //video.playbackRate = 8.0;
     var promise = video.play();
     // In browsers that don’t yet support this functionality,
@@ -139,7 +138,8 @@ function onEndedAudio(numero, idioma)
             hideText("texto" + "152" + idioma);
             hideText("texto" + "15" + idioma);
         }
-        hideText("texto" + padLeadingZeros( numero + 1 , 2) + idioma);
+        console.log("onEndedAudio:: texto" + padLeadingZeros( parseInt(numero, 10)+1 , 2) + idioma);
+        hideText("texto" + padLeadingZeros( parseInt(numero, 10)+1 , 2) + idioma);
     }
 
     if(numero - 1 > 0 && numero - 1 <= 20)
@@ -157,7 +157,7 @@ function onEndedAudio(numero, idioma)
             hideText("texto" + "152" + idioma);
             hideText("texto" + "15" + idioma);
         }
-        hideText("texto" + padLeadingZeros( numero - 1 , 2) + idioma);
+        hideText("texto" + padLeadingZeros( parseInt(numero, 10)- 1 , 2) + idioma);
     }
 
 
@@ -176,6 +176,7 @@ function onEndedAudio(numero, idioma)
             showText("texto" + "152" + idioma);
             showText("texto" + "15" + idioma);
         }
+        console.log("Show texto" + numero + idioma)
         showText("texto" + numero + idioma);
     }
 
